@@ -1,0 +1,43 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:800italic");
+
+html{
+    height:100%;
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: url("../images/constructive-backdrop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h3,p{
+    float:left;
+    clear:left;
+    width:300px;
+    background:rgb(248,245,238);
+    color:rgb(255, 209, 152);
+    text-align:center;
+}
+
+h1{
+    margin:50px 0 0 50px;
+    background-image: url("../images/constructive-logo.gif");
+    height:175px;
+    background-repeat: no-repeat;
+    text-indent: -999%;
+}
+
+h3{
+    color:tomato;
+}
+
+p + script + h3 {
+    padding-bottom:20px;
+    border-bottom: 1px solid white;
+}
