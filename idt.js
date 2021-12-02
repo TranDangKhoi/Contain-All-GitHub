@@ -21,7 +21,7 @@ document.onkeydown = function(e) {
 
 var password = document.getElementById("password");
 function checkReq(){
-    if (password.value == "cgvkimdong123" ){
+    if (password.value == "toitenlakhoi123" ){
         window.location.href = "https://all-assignments-and-clones.herokuapp.com/container.html";
     }
 }
