@@ -10,8 +10,7 @@ loadVideo("Tech Linus");
 // Get the modal
 var modal = document.getElementById('myModel');
 // Get the <span> element that closes the modal
-
-var span = document.getElementById('close')[0];
+var span = document.getElementsByClassName("close")[0];
 var videoFrame = document.getElementById("video-frame");
 
 span.onclick = function(){
@@ -36,7 +35,7 @@ function loadVideo(keyword){
             var htmlContent = "";
 
             for (var i = 0; i< responseJson.items.length;i++){
-                if(responseJson.items[i].id.kind =='youtube#channel'){
+                if(responseJson.items[i].id.kind == 'youtube#channel'){
                     continue;
                 }
                 var videoId = responseJson.items[i].id.videoId;
@@ -59,12 +58,12 @@ function loadVideo(keyword){
 
 function closeVideo(){
     modal.style.display = "none";
-    videoFrame.src = "";
+    videoFrame.src ="";
 }
 
 function showVideo(videoId){
     videoFrame.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
     setTimeout(function(){
-    modal.style.display = "block";
-}, 300);
+        modal.style.display = "block";
+    }, 300);
 }
