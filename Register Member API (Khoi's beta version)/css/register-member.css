@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@300;400&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@200;300;400;500&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    background: url("../images/loginbg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    line-height:18px;
+}
+
+h3{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight:600;
+    line-height:30px;
+    margin: 0px 0px 8px;  
+}
+
+#header-subtitle { 
+    color:#b9bbb3;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+#register-container{
+        width: 480px;
+        border: 1px solid transparent;
+        background:rgb(54,57,63);
+        margin: 90px auto 0 auto;
+        border-radius: 5px;
+        padding-bottom:0px;
+        box-shadow:#000000 0px 2px 10px 0px;
+        font-size:18px;
+        padding:32px;
+}
+
+#login-container {
+        width: 780px;
+        border: 1px solid transparent;
+        background:rgb(54,57,63);
+        margin: 80px auto 0 auto;
+        border-radius: 5px;
+        padding-bottom:0px;
+        box-shadow:#000000 0px 2px 10px 0px;
+        font-size:18px;
+        line-height:18px;
+        padding:32px;
+}
+
+@media only screen and (max-width: 445px) {
+    #first-name, #password {
+      display:block;
+    }
+  }
+
+form{
+    margin-left: 65px;
+}
+
+.form-user-main-info{
+    display:flex;
+}
+
+.form-user-main-info #username,.form-user-main-info #password{
+    border: 1px solid transparent;
+    width:110px;
+    margin-bottom: 22px;
+    background-color:rgb(31, 38, 51);
+    margin-right:36px;
+    outline:none;
+    height:22px;
+    color:white;
+    font-size:20px;
+    font-weight: 500;
+}
+
+#password,#re-password,#birth,#fullName,#avatar,#gender,#email{
+    display:block;
+    background-color:rgb(31, 38, 51);
+    margin-bottom: 22px;
+}
+#birth{
+    width:340px;
+    margin-top:0;
+}
+
+.form-field-align{
+    margin-left:150px;
+    font-family: "Lato",sans-serif;
+}
+
+.inner-form-gender{
+    display: flex;
+    margin-left:20px;
+}
+
+
+
+input[type="text"],input[type="tel"],input[type="date"],input[type="number"],#re-password,input[type="email"]{
+    border:1px solid transparent;
+    border-radius:3px;
+    width:300px;
+    height:22px;
+    font-family: "Lato", sans-serif;;
+    font-size:20px;
+    font-weight: 500;
+    color:white;
+    outline:none;
+}
+
+#gender-1{
+    margin-right:205px;
+}
+
+.form-label-gender{
+    color:#999;
+    font-family: "Lato",sans-serif;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #6a5af9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type="text"]:focus,input[type="tel"]:focus,input[type="number"]:focus,input[type="password"]:focus{
+    caret-color: #5865f2;
+}
+
+input::-webkit-outer-spin-button, /* hide the arrow when focus on the <input type="number"> */
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="textarea"]{
+    width:50px;
+}
+
+input[type="submit"]{
+    cursor:pointer;
+    display:block;
+    padding:17px;
+    width:120px;
+    background:#5865f2;
+    color:white;
+    border:1px solid transparent;
+    border-radius: 3px;
+    font-family: 'Lato',sans-serif;
+    letter-spacing: 1px;
+    margin-top:15px;
+    margin-left:100px;
+    transition:linear 200ms;
+    font-size:16px;
+    align-items: center;
+}
+
+input[type="submit"]:hover{
+    background:#3d47bd;
+}
+
+input[type="reset"]{
+        cursor:pointer;
+        display: block;
+        padding:17px;
+        width:120px;
+        background:#fc3200;
+        color:white;
+        border:1px solid transparent;
+        border-radius: 3px;
+        font-family: 'Lato',sans-serif;
+        letter-spacing: 1px;
+        margin-top:15px;
+        transition:linear 200ms;
+        font-size:16px;
+        align-items: center;
+}
+
+input[type="reset"]:hover{
+    background:#af2f0f;
+}
+
+.btnSubmit{
+    display: flex;
+    position: relative;
+}
+
+
+/* Input focus effect */
+.form-input {
+    border : 1px solid #eee;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.25s ease;
+}
+
+.form-input:focus{
+    border-color: #6a5af9;
+}
+
+.form-field{
+    position: relative;
+}
+
+.form-label-special {
+    position: absolute;
+    top:25%;
+    transform: translateY(-50%);
+    left: 21px; /*padding bao nhieu thi left tung day ( o tren .form-input padding 20 thi left phai lay : 0 + 20 de con tro nam dung vao vi tri caret*/
+    user-select: none;
+    color: #999;
+    pointer-events: none; /* Khong bi vuong phai label khi click vao vung input */
+    transition: ease-in-out 120ms;
+}
+
+.form-label {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 21px; /*padding bao nhieu thi left tung day ( o tren .form-input padding 20 thi left phai lay : 0 + 20 de con tro nam dung vao vi tri caret*/
+    user-select: none;
+    color: #999;
+    pointer-events: none; /* Khong bi vuong phai label khi click vao vung input */
+    transition: ease-in-out 120ms;
+}
+.form-input:not(:placeholder-shown) +.form-label, /* not(:placeholder-shown) -> when placeholder dissapear ( which means when you focus or input text to the field */
+.form-input:focus + .form-label {  /* When focus on the input field move the placeholder to top left */
+        top: -11px;
+        left: -10px;
+        padding: 0 10px;
+        display:inline-block;
+        background-color: transparent;
+        color: #6a5af9;
+        font-size:15px;
+        font-family: "Lato",sans-serif;
+        font-weight: 500;
+}
+
+.form-input:not(:placeholder-shown) +.form-label-special, /* not(:placeholder-shown) -> when placeholder dissapear ( which means when you focus or input text to the field */
+.form-input:focus + .form-label-special {  /* When focus on the input field move the placeholder to top left *****this is for first name and last name label****** */
+        top: -11px;
+        left: -10px;
+        padding: 0 10px;
+        display:inline-block;
+        background-color: transparent;
+        color: #6a5af9;
+        font-size:15px;
+        font-family: "Lato",sans-serif;
+        font-weight: 500;
+}
+
+.form-input:not(:focus) + .form-label{ /* When not focus change the color of the label ***** this is for first name and last name label ******* */
+    color: #999;
+}
+
+.form-input:not(:focus) + .form-label-special { /* When not focus change the color of the label ***** this is for first name and last name label ******* */
+    color: #999;
+}
+
+#birth-label{
+    color:#999;
+    font-size: 15px;
+    font-family: "Lato",sans-serif;
+    font-weight: 500;
+}
+
+#short-img{
+    position:absolute;
+    right:10px;
+    top:3px;
+    z-index:9999;
+}
+
+#long-img{
+    position:absolute;
+    right:50px;
+    top:3px;
+    z-index:9999;
+}
+
+.hidden{
+    display: none;
+    position:absolute;
+    right:10px;
+    top:3px;
+    z-index:9999;
+}
+
+.cross1 {
+    position:absolute;
+    right:10px;
+    top:3px;
+    z-index:9999;
+}
+
+.cross2{
+    position:absolute;
+    right:11px;
+    top:3px;
+    z-index:9999;
+}
+
+.cross3 {
+    position:absolute;
+    right:50px;
+    top:2px;
+    z-index:9999;
+}
+
+
+
+.tick1 {
+    position:absolute;
+    right:11px;
+    top:3px;
+    z-index:9999;
+}
+
+.tick2 {
+    position:absolute;
+    right:11px;
+    top:3px;
+    z-index:9999;
+}
+
+.tick3 {
+    position:absolute;
+    right:50px;
+    top:2px;
+    z-index:9999;
+}
+
+
+
+span{
+    z-index:999;
+    position:absolute;
+    font-size:100px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register-member.css">
+</head>
+<body>
+    <div id="register-container">
+        <header>
+            <h3 id="header-title">Chào mừng!</h3>
+            <div id="header-subtitle">Rất vui được gặp bạn</div>
+        </header>
+        <span class="error-msg" id="total-msg"></span>
+        <form id="register-form" name="member">
+            <div class="form-user-main-info">
+                    <div class="form-field">
+                        <input type="text" placeholder=" " name="username" id="username" class="form-input" maxlength="50" autocomplete="off"> 
+                        <label id="username-label" class="form-label-special">Họ và tên</label> <img class="hidden tick1" src="images/check.png" alt="tick" /><img class="hidden cross1" src="images/cross.png" alt="cross" />
+                    </div>
+            
+                    <div class="form-field">
+                        <input type="email" placeholder=" " pattern=".+@gmail\.com" name="password" id="password" class="form-input" autocomplete="off">  
+                        <label id="password-label" class="form-label-special">Email</label> <img class="hidden tick2" src="images/check.png" alt="tick" /><img class="hidden cross2" src="images/cross.png" alt="cross" />
+                    </div>
+            </div>
+                    <div class="form-field">
+                        <input type="number" placeholder=" " name="re=password" id="re-password" class="form-input" autocomplete="off">  
+                        <label id="repassword-label" class="form-label">Phone</label> <img class="hidden tick3" src="images/check.png" alt="tick" /><img class="hidden cross3" src="images/cross.png" alt="cross" />
+                    </div>
+            
+                    <div class="form-field">
+                        <input type="text" placeholder=" " name="fullName" id="fullName" class="form-input" autocomplete="off">  
+                        <label id="fullname-label" class="form-label">Họ và tên</label> <img class="hidden tick3" src="images/check.png" alt="tick" /><img class="hidden cross3" src="images/cross.png" alt="cross" />
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder=" " id="email" class="form-input" autocomplete="off"> 
+                        <label id="email-label" class="form-label">Email</label> <img class="hidden tick3" src="images/check.png" alt="tick" /><img class="hidden cross3" src="images/cross.png" alt="cross" />
+                    </div>
+            
+                    <label id="birth-label">Ngày sinh</label>
+                    <input type="date" name="birthDay" data-date-inline-picker="true" id="birth"> 
+
+                    <div class="form-field">
+                        <div class="form-field-align">
+                        <label class="form-label-gender">Giới tính</label>
+                        </div>
+                        <div class="inner-form-gender">
+                        <label class="form-label-gender">Nam</label>
+                        <input type="radio" name="gender" id="gender-1" class="form-gender" value="1" checked>
+                        <label class="form-label-gender">Nữ</label>
+                        <input type="radio" name="gender" id="gender-0" class="form-gender" value="0">
+                        </div>
+                    </div>
+            
+                        <div class="btnSubmit">
+                    <input type="reset" name="reset" id="reset">
+                    <input type="submit" name="submit" value="Sign up">
+                        </div>
+            
+                    </div>
+                </form>
+            </div>
+<script src="js/jquery.js"></script>
+<script src="js/register-member.js"></script>
+</body>
+</html>
