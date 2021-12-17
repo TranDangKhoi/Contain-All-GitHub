@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/login-form.css">
+</head>
+
+<body>
+    <div id="login-container">
+    <header>
+        <h3 id="header-title">Chào mừng trở lại!</h3>
+        <div id="header-subtitle">Rất vui mừng khi được gặp lại bạn</div>
+    </header>
+    <form id="register-form" name="register-form" method="post" action="https://music-i-like.herokuapp.com/api/v1/accounts"></form>
+
+    <div class="form-field">
+        <label class="form-label">Email hoặc số điện thoại</label>
+        <input type="text" name="email" placeholder=" " id="email" class="form-input" autocomplete="off"> 
+    </div>
+
+    <div class="form-field">
+        <label class="form-label">Mật khẩu</label>
+        <input type="password" placeholder=" " name="password" id="password" class="form-input" autocomplete="off">  
+    </div>
+</body>
+
+</html>

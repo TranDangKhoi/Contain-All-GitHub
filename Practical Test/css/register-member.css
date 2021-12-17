@@ -9,6 +9,11 @@ body{
     background-size:cover;
 }
 
+::selection{
+    background:white;
+    color:#5865f2;
+}
+
 header{
     text-align:center;
     display:flex;
@@ -172,7 +177,8 @@ textarea{
     font-family: "Lato", sans-serif;
     font-size:20px;
     font-weight: 500;
-    caret-color: #5865f2; ;
+    caret-color: #5865f2;
+    resize: none;
 }
 
 
@@ -381,6 +387,7 @@ input[type="reset"]:hover{
 #charactersLeft{
     color:white;
     margin-bottom:20px;
+    font-family: "Lato",sans-serif;
 }
 
 #align-label{
@@ -388,6 +395,8 @@ input[type="reset"]:hover{
 }
 
 footer{
+    cursor:text;
+    user-select: none;
     margin-top:100px;
     text-align: center;
     color:#6a5af9;

@@ -125,12 +125,22 @@ $('.form-field #email').blur(function (){
     }
 });
 
-$('.form-field #email').keypress(function (){
+$('#reset').onclick(function (){
     if($("#email").val() != '')
     {
         $(".form-field #email-label").next('.tick3').next('.cross3').addClass('hidden');
         $(".form-field #email-label").next('.tick3').removeClass('hidden');
     }
+});
+// Reset
+$('#reset').click(function (){
+        $(".form-field label").next('.tick1').addClass('hidden');
+        $(".form-field label").next('.tick1').next('.cross1').addClass('hidden');
+});
+
+$('#reset').click(function (){
+        $(".form-field label").next('.tick1').next('.cross1').addClass('hidden');
+        $(".form-field label").next('.tick1').addClass('hidden');
 });
 
 // $('.form-field input').blur(function (){
