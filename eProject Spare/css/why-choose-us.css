@@ -1,0 +1,64 @@
+.why-choose-above {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-below {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-wrapper {
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 40px 0 40px;
+}
+
+.why-content {
+    padding: 2rem;
+}
+
+.linear-icon div {
+    display: block;
+    pointer-events: none;
+    font-size: 35px;
+    background: -moz-linear-gradient(top,
+            rgb(85, 83, 240) 0%,
+            rgb(143, 141, 252) 100%);
+    background: -webkit-linear-gradient(top,
+            rgb(172, 170, 255) 0%,
+            rgb(143, 141, 252) 100%);
+    background: linear-gradient(to bottom,
+            rgb(172, 170, 255) 0%,
+            rgb(143, 141, 252) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-icon i::before {
+    display: inline;
+}
+
+.why-title {
+    font-size: 19px;
+    color: #2d4271;
+}
+
+.why-subtitle {
+    width: 330px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1px;
+    padding: 0;
+    text-align: center;
+}

@@ -1,0 +1,168 @@
+button {
+  cursor: pointer;
+}
+
+.special-tour,
+.discover-header,
+.favorite-destination-header,
+.why-choose-header {
+  color: #2d429d;
+  margin-bottom: 40px;
+  font-size: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.why-choose-header {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 25px;
+  font-weight: 400;
+}
+
+.favorite-destination-header {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.boxed {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid currentColor; */
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 100px;
+  align-items: center;
+  color: rgba(47, 185, 66);
+  position: relative;
+}
+
+.boxed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+
+.boxed-2 {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid currentColor; */
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 100px;
+  align-items: center;
+  color: rgb(43, 135, 228);
+  position: relative;
+}
+
+.boxed-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  border-radius: inherit;
+  background-color: rgb(43, 135, 228);
+  opacity: 0.1;
+}
+
+.logo-whatsapp {
+  transform: translateY(-1px);
+}
+
+.logo-facebook {
+  transform: translateY(-1px);
+}
+
+.icon-column {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.download-whatsapp {
+  color: rgba(47, 185, 66);
+}
+
+.download-facebook {
+  color: rgb(43, 135, 228);
+}
+
+#download {
+  margin: 13px 0 0 9px;
+}
+
+.checkbox-popup {
+  color: rgb(35, 185, 55);
+  font-size: 50px;
+}
+
+.align-next-icon {
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+.flame-icon,
+.discover-icon {
+  display: inline-block;
+  color: orange;
+  font-size: 30px;
+}
+
+.earth-icon {
+  display: inline-block;
+  font-size: 30px;
+  transform: translate(10px, 3px);
+}
+
+.discover-icon {
+  transform: translate(10px, 3px);
+}
+
+.question-mark-icon {
+  margin-left: -10px;
+}
+
+.plus-mark {
+  font-size: 22px;
+  display: inline-block;
+  transition: all 250ms ease-in-out;
+}
+
+.fa-cart-plus {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.show-all-align {
+  text-align: center;
+}
+
+.show-all-align button {
+  text-align: center;
+  align-items: center;
+  border: 1px solid #ced4de;
+  border-radius: 5px;
+  color: #2d4271;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 13px 30px;
+  background: transparent;
+}
+
+.show-all-align button:hover {
+  border: 1px solid #2d4271;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/title.css">
+  <title>Pleasant Tour</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="header-logo"><a href="design1.html" class="main-page">Pleasant Tours</a></h1>
+
+      <nav>
+        <div class="col-flex">
+          <div class="above-nav">
+            <div class="above-nav-inner">
+              <div class="btn-contact">
+                <a href="#" class="btn-contact-inner">Liên hệ</a>
+              </div>
+              <form role="search" action="#" class="search-form" data-metatip="true">
+                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar" />
+              </form>
+              <div class="btn-search">
+                <button type="submit" class="btn-search-inner">
+                  <img src="img/search-icon.png" alt="Search" class="search-icon" />
+                </button>
+              </div>
+              <div class="btn-notification">
+                <button type="submit" class="btn-notification-inner">
+                  <img src="img/notification.png" alt="Notification" class="notification-icon" />
+                </button>
+              </div>
+              <div class="welcome-feature">
+                <h2 class="typing">Welcome, we are the Buzzin.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="under-nav">
+            <ul>
+              <li><a href="#">Du lịch trong nước</a></li>
+              <li><a href="#">Du lịch nước ngoài</a></li>
+              <li><a href="#">Thiết kế chuyến đi</a></li>
+              <li><a href="#">Xem thêm +</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="outer-animated-gif">
+    <img class="animated-gif" src="https://media.giphy.com/media/toelXGUsYD6vtCN408/giphy.gif">
+    <div class="outer-btn-animated-gif">
+    <a href="#" class="btn-animated-gif">Thiết lập hành trình tiếp theo của bạn</a>
+    </div>
+  </div>
+  <div class="card-container">
+    <h1>Demo thẻ slider dành cho việc đặt vé</h1>
+    <div class="card">
+      <input type="radio" name="select" id="slide_1" checked>
+      <input type="radio" name="select" id="slide_2">
+      <input type="radio" name="select" id="slide_3">
+      <input type="radio" name="select" id="slide_4">
+      <input type="checkbox" id="slideImg">
+
+      <div class="slider">
+        <label for="slide_1" class="slide slide_1"></label>
+        <label for="slide_2" class="slide slide_2"></label>
+        <label for="slide_3" class="slide slide_3"></label>
+        <label for="slide_4" class="slide slide_4"></label>
+      </div>
+
+      <div class="inner_part">
+        <label for="slideImg" class="img">
+          <img class="img_1" src="https://img.theculturetrip.com/wp-content/uploads/2021/05/kdf3w7-e1621870258954.jpg">
+        </label>
+        <div class="content content_1">
+          <div class="title">Việt Nam</div>
+          <div class="text">
+            Việt Nam,là một trong những đất nước đáng để sinh sống nhất ở Châu Á bởi lòng hiếu khách cùng với nền văn hóa đa dạng và phong cảnh thiên nhiên sinh động và thuần túy.
+          </div>
+          <button>Xem thêm</button>
+        </div>
+      </div>
+
+      <div class="inner_part">
+        <label for="slideImg" class="img">
+          <img class="img_2"
+            src="https://vcdn-vnexpress.vnecdn.net/2020/06/09/VNE-Wall-1686-1591699720.jpg">
+        </label>
+        <div class="content content_2">
+          <div class="title">Trung Quốc</div>
+          <div class="text">
+            Trung Quốc, là một quốc gia có lịch sử rất phong phú và vô cùng đa dạng, rất phù hợp cho những ai thích khám phá, tìm tòi và phát minh.
+          </div>
+          <button>Xem thêm</button>
+        </div>
+      </div>
+
+      <div class="inner_part">
+        <label for="slideImg" class="img">
+          <img class="img_3"
+            src="https://media.cntraveler.com/photos/5a02479c97dfd836a831a41c/master/w_3740,h_2805,c_limit/Semporna-Malaysia-GettyImages-470282314.jpg">
+        </label>
+        <div class="content content_3">
+          <div class="title">Malaysia</div>
+          <div class="text">Một đất nước văn minh và lộng lẫy. Những du khách ai ai cũng thích thú bởi nền văn hóa đa dạng của họ cùng với hàng loạt những di sản và văn hóa sống động
+          </div>
+          <button>Xem thêm</button>
+        </div>
+      </div>
+
+      <div class="inner_part">
+        <label for="slideImg" class="img">
+          <img class="img_4"
+            src="https://allasiatours.com/acp18/place18/img18/sm/BGVC182554119.jpg">
+        </label>
+        <div class="content content_4">
+          <div class="title">Myanmar</div>
+          <div class="text">Myanmar với một vẻ cổ kính, đầy hoài niệm trong cách sinh hoạt, những công trình đền đài, di tích mang đến cho du khách những trải nghiệm rất khó quên
+          </div>
+          <button>Xem thêm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

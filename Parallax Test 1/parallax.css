@@ -1,0 +1,47 @@
+/* Here is where the magic actually happens. */
+
+
+
+.img3 {
+  position: relative; /*setting the img possition to cover the scr*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+  If set to:
+  fixed == parallax
+  scroll == normal
+  */
+  background-attachment: fixed;
+}
+
+.img3{
+  background-image: url("https://images.pexels.com/photos/262669/pexels-photo-262669.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  max-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+  /*setting a box outside of the text, but it will not display alone KEEP THAT IN MIND*/
+.text .border{
+  background-color: #111;
+  color: #aaa;
+  padding: 20px;
+  display: block;  
+}
+
+.text .border .trans{
+  background-color: transparent;
+}
+

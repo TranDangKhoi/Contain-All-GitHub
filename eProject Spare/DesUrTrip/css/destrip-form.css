@@ -1,0 +1,101 @@
+.destrip-form-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 100px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.progress-step {
+    display: inline-block;
+
+}
+
+.step {
+    border-radius: 6px;
+    padding: 10px 15px 14px;
+    text-align: left;
+    background: grey;
+    font-size: 16px;
+
+}
+
+.step:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.step:link {
+    color: white;
+    text-decoration: none;
+}
+
+.step-2 {
+    border-radius: 6px;
+    padding: 10px 15px 14px;
+    text-align: left;
+    background: grey;
+    font-size: 16px;
+
+}
+
+.step-2:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.step-2:link {
+    color: white;
+    text-decoration: none;
+}
+
+.step-3 {
+    border-radius: 6px;
+    padding: 10px 15px 14px;
+    text-align: left;
+    background: grey;
+    font-size: 16px;
+
+}
+
+.step-3:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.step-3:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.active-step {
+    border-radius: 6px;
+    padding: 10px 15px 14px;
+    background: #20abe2;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.active-step:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.step-number {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #666666;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 14px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 5px;
+    padding: 4px;
+    text-align: center;
+    color: black;
+}

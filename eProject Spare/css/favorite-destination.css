@@ -1,0 +1,77 @@
+.favorite-destination-above {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.favorite-destination-below {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.favorite-tour-info {
+  padding: 2rem;
+}
+
+.favorite-tour-img {
+  width: 100%;
+  height: 213px;
+  display: block;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+
+.favorite-tour-header {
+  color: #2d429d;
+  font-size: 2.25rem;
+  margin-top: 0;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.visited {
+  margin-bottom: 1px;
+  padding: 0;
+  text-align: left;
+  color: black;
+}
+
+.favorite-tour-card {
+  cursor: pointer;
+  width: 312px;
+  overflow: hidden;
+  border-radius: 1px;
+  margin: 0 30px 0 30px;
+  position: relative;
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.favorite-tour-card:hover {
+  transform: translateY(-5px);
+  border: none;
+  border-bottom: 5px solid #f49433;
+}
+
+.favorite-tour-card:hover .visited {
+  color: black;
+}

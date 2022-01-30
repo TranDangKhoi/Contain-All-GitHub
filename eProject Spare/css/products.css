@@ -1,0 +1,266 @@
+.tour-products {
+  margin-top: 330px;
+  padding-bottom: 500px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.tour-products img {
+  display: block;
+  max-width: 100%;
+}
+
+.tour-products {
+  padding: 20px;
+}
+
+.cards {
+  --spacing: 25px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+}
+
+@media screen and (max-width: 1023px) {
+  .cards {
+    --columns: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    --spacing: 15px;
+    --columns: 1;
+  }
+}
+
+.tour-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.tour-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 14px 14px 59px 3px;
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-top {
+  padding: 25px;
+}
+
+.card-title {
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 25px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  color: #2d429d;
+}
+
+.card-title:hover {
+  color: #4864e2;
+}
+
+.card-tour {
+  display: flex;
+  align-items: center;
+}
+
+.card-tour-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-tour-info {
+  padding-left: 20px;
+  flex: 1;
+}
+
+.card-tour-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.card-tour-id {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.card-tour-saleprice {
+  margin-top: 5px;
+}
+
+.card-tour-price {
+  margin-top: 15px;
+}
+
+.real-price {
+  color: #fd5556;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-tour-top ion-icon {
+  color: #999;
+  padding-right: 3px;
+}
+
+.card-tour-content {
+  color: black;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card-bottom {
+  padding: 25px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-sale {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #ff6651;
+}
+
+
+
+.card-live span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.card-watching {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-tour,
+.card-bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  transition: all 220ms ease-in-out;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-button {
+  text-align: center;
+}
+
+.order-button button {
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #f49433;
+  padding: 10px 155px 10px 155px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin: 10px 0 0 -18px;
+  transition: all 150ms ease-in-out;
+}
+
+.order-button button:hover {
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #cc7c2c;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+.order-button button:active {
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #a3601d;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .order-button button {
+    padding: 10px 120px 10px 120px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .order-button button {
+    padding: 10px 110px 10px 110px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .order-button button {
+    padding: 10px 100px 10px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .order-button button {
+    padding: 10px 90px 10px 90px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .order-button button {
+    padding: 10px 75px 10px 75px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .order-button button {
+    padding: 10px 120px 10px 120px;
+  }
+}

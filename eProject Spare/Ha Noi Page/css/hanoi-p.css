@@ -1,0 +1,28 @@
+.tour-list-above {
+    text-align: center;
+    color: #2D4271;
+}
+
+.tour-list-para {
+    text-align: left;
+    color: #2D4271;
+    font-size: 15px;
+}
+
+.tour-list-above span {
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tour-list-above span:hover {
+    color: #577dcf;
+}
+
+.tour-list-div {
+    margin-top: 30px;
+}
+
+.sidebar {
+    margin-top: 30px;
+}

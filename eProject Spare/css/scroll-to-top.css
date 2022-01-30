@@ -1,0 +1,56 @@
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.scroll {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(32, 171, 226, 0.5);
+  padding: 5px 14px 5px 14px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  -moz-transition: 0.4s ease-out;
+  -webkit-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.scroll:hover {
+  background: rgba(32, 171, 226, 1);
+  transition: 220ms ease-in-out;
+  -moz-transition: 220ms ease-in-out;
+  -webkit-transition: 220ms ease-in-out;
+  -o-transition: 220ms ease-in-out;
+}
+
+.scroll .fa {
+  font-size: 30px;
+  color: white;
+  margin-top: -5px;
+  opacity: 0.5;
+  margin-left: 1px;
+  transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.scroll:hover .fa {
+  opacity: 1;
+}

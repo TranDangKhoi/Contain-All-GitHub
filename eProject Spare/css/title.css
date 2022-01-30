@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Natalic";
+  src: url("fonts/NatalicScript.otf");
+}
+
+.animated-gif {
+  width: 340px;
+  height: auto;
+  pointer-events: none;
+  cursor: default;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.outer-animated-gif {
+  text-align: center;
+}
+
+.outer-btn-animated-gif {
+  margin-top: -30px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.btn-animated-gif {
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background: #20abe2;
+  padding: 12px 26px 12px 26px;
+  text-decoration: none;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(8px, 15px, 15px);
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+@media screen and (max-width: 400px) {
+  .btn-animated-gif {
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.btn-animated-gif:hover {
+  background: #f49433;
+  text-decoration: none;
+  color: white;
+}
+
+#seperate {
+  border-bottom: 1px solid black;
+  opacity: 0.25;
+  display: block;
+  padding-bottom: 100px;
+}
+
+.quote {
+  margin: 100px auto auto auto;
+  font-size: 34px;
+  font-weight: 300;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
+
+.under-quote {
+  font-family: "Natalic";
+  font-size: 34px;
+  transform: translateY(10px);
+  margin-bottom: 0;
+}

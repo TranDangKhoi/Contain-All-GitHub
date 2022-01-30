@@ -1,0 +1,105 @@
+.discover {
+  display: flex;
+  gap: 100px;
+  padding-left: 30px;
+  padding-right: 40px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.discover-head {
+  clear: both;
+  position: relative;
+}
+
+.discover-cover {
+  height: 324px;
+  width: 216px;
+  max-width: 350px;
+  background: red;
+  background-size: cover;
+  position: relative;
+  transition: 0.4s;
+  backface-visibility: hidden;
+  border-radius: 6px;
+}
+
+.discover-image {
+  height: 324px;
+  width: 216px;
+  max-width: 350px;
+  border-radius: 12px;
+}
+
+.discover-card {
+  height: 324px;
+  width: 216px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.discover-para {
+  color: #fff;
+  text-decoration: none !important;
+  position: absolute;
+  bottom: 15px;
+  left: 16px;
+  z-index: 6;
+  font-size: 20px;
+  transition: 100ms ease-out;
+  backface-visibility: hidden;
+}
+
+.card-cover:after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.8;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.discover-cover:hover:after {
+  width: 100px;
+  bottom: 30px;
+  opacity: 1;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.discover-cover:hover {
+  background-position: -25px;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.discover-cover:hover p {
+  bottom: calc(15px + 2px);
+  transition: 200ms;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.discover-card-bg {
+  background: linear-gradient(rgba(45, 66, 113, 0) 0%, rgb(45, 66, 113) 100%);
+  position: absolute;
+  top: 255px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 150ms ease-out;
+}
+
+.discover-cover:hover .discover-card-bg {
+  top: 251px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

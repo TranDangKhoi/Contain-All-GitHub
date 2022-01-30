@@ -1,0 +1,158 @@
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.hotline-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right-hotline {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.right-hotline-title {
+    font-weight: 400;
+}
+
+.left-hotline {
+    width: 600px;
+    margin-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    border-right: 1px solid rgba(154, 154, 154, 0.5);
+}
+
+
+.hotline-content h1 {
+    font-size: 25px;
+}
+
+.hotline-inner {
+    margin: 10px auto auto auto;
+}
+
+.hotline {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.hotline-number {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.whatsapp-inner {
+    margin: 50px auto auto auto;
+}
+
+.whatsapp-inner .whatsapp {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.whatsapp-inner .whatsapp-number {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.facebook-inner {
+    margin: 50px auto auto auto;
+}
+
+.facebook-inner .facebook {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.facebook-inner .facebook-link {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+
+.pop-up {
+    font-family: "roboto", sans-serif;
+}
+
+.content-overlay h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.popup .content-overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 950px;
+    height: 450px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: black 0px 2px 5px 0px;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active2 .overlay {
+    display: block;
+}
+
+.popup.active2 .content-overlay {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+table {
+    font-family: "roboto", sans-serif;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.whatsapp-number {
+    cursor: pointer;
+}

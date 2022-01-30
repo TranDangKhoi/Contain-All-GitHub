@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@300;400&family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Oswald:wght@200;300;400;500&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 25;
+  }
+
+.container{
+    background:white;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    margin-left:15rem;
+}
+
+header{
+    background: white;
+    height:150px;
+    box-sizing: border-box;
+}
+header::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.header-logo {
+    cursor:pointer;
+    float:left;
+    width:10rem;
+    height:8rem;
+    background-image: url("../img/pleasant-tour-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin-top:-20px;
+    text-indent: -9999%;
+}
+
+a.main-page{
+    text-indent: -999%;
+    display:block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size:16pt;
+    font-family: Arial, sans-serif;
+    padding:20px 10px 100px 10px;
+}
+
+nav {
+    margin:auto auto;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+nav li{
+    display: inline-block;
+    margin-left:60px;
+    padding-top:30px;
+    position: relative;
+}
+
+nav ul a{
+    display: inline-block;
+    text-decoration:none;
+    color:#5c5c5c;
+    font-size: clamp(10px, 18px, 19px);
+    text-transform: uppercase;
+    width:max-content
+}
+
+nav ul a:hover{
+    color:black;
+}
+
+nav ul a::after{
+    content:"";
+    display:block;
+    height:4px;
+    width:0%;
+    background-color: #444;
+    position:absolute;
+    transition:all ease-in-out 300ms;
+}
+  
+nav ul a:hover::after{
+    width:100%;
+}
+
+* { /* make all element unhightlightable */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+ }
+
+
+ .search-bar{
+    margin:10px;
+    border-bottom: 1px solid #8e8d8d;
+    width: 260px;
+    font-size:15px;
+    font-family: "roboto",sans-serif;
+    font-weight:300;
+    padding: 6px 5px 0;
+    border-top: 1px solid transparent;
+    border-right:1px solid transparent;
+    border-left: 1px solid transparent;
+    display:inline-block;
+}
+
+.search-bar:focus{
+    outline:none;
+}
+
+.col-flex{
+    margin: auto auto auto 360px;
+    display:flex;
+    flex-direction: column;
+}
+
+.above-nav{
+    margin: auto auto auto 100px;
+    display:inline-block;
+}
+
+.above-nav-inner{
+    display: inline-block;
+}
+
+.btn-contact-inner{
+    font-size: 17px;
+    line-height: 28px;
+    padding: 0 10px;
+    border: 1px solid #31AFB4;
+    border-radius: 20px;
+    margin: 10px;
+    color: #31AFB4;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: "Kanit",sans-serif;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: 150ms ease-in-out;
+}
+
+.btn-contact-inner:hover{
+    border: 1px solid #ffd000;
+    color: #ffd000;
+}
+
+.btn-contact{
+    display: inline-block;
+}
+
+.search-form{
+    display: inline-block;
+}
+
+.btn-search{
+    display: inline;
+}
+
+.btn-search-inner{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    margin-left:-10px;
+    margin-top:5px;
+    border:none;
+    outline:none;
+    -webkit-appearance: none !important;
+    cursor:pointer;
+    background:transparent;
+    line-height: normal;
+    text-transform: none;
+}
+
+.search-icon{
+    display: inline;
+    text-align: center;
+}
+
+.btn-notification{
+    display: inline;
+    margin-left:4px;
+}
+
+.btn-notification-inner{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin-left:-10px;
+    margin-top:5px;
+    border:none;
+    outline:none;
+    -webkit-appearance: none !important;
+    cursor:pointer;
+    background:transparent;
+    line-height: normal;
+    text-transform: none;
+}
+
+.notification-icon{
+    display: inline;
+    text-align: center;
+}
+
+.welcome-feature{
+    position:relative;
+    text-align: center;
+    display:inline-block;
+}
+
+h2.typing {
+    font-size: 16px;
+    position: relative;
+    font-family:monospace;
+    width: max-content;
+    margin-left:10px;
+    transform: translateY(-3px);
+}
+  
+  h2.typing::before,
+  h2.typing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h2.typing::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h2.typing::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+

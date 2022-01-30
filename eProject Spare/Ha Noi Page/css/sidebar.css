@@ -1,0 +1,243 @@
+.sidebar-nav .navbar .navbar-collapse {
+    padding-top: 10px;
+    max-height: none;
+}
+
+.sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+.navbar.navbar-default {
+    height: 1000px;
+    width: 300px;
+    margin-left: -20px;
+}
+
+.float-right {
+    float: right;
+    transition: all 100ms ease-in-out;
+}
+
+.fa {
+    font-size: .8em;
+    line-height: 22px !important;
+}
+
+dropdown {
+    display: inline-block;
+    margin: 10px 50px;
+}
+
+dropdown label {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #ECF0F1;
+    padding: 15px 20px;
+}
+
+dropdown ul li {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #ECF0F1;
+    padding: 15px 20px;
+}
+
+dropdown label:hover,
+dropdown ul li:hover {
+    background: #4d4aef;
+    color: white;
+    cursor: pointer;
+}
+
+dropdown label {
+    color: #4d4aef;
+    border-left: 4px solid #4d4aef;
+    border-radius: 0 5px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+dropdown input {
+    display: none;
+}
+
+dropdown input~ul {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+    left: -40px;
+    z-index: 1;
+}
+
+dropdown input:checked+label {
+    background: #4d4aef;
+    color: white;
+}
+
+dropdown input:checked~ul {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+
+dropdown input:checked~label .float-right {
+    transform: rotate(180deg);
+}
+
+.animate {
+    font-weight: 400;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome and Safari */
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+}
+
+.sidebar-content {
+    margin-top: -140px;
+}
+
+.sidebar-content button {
+    outline: none;
+    border: 1px solid white;
+    box-shadow: #e2f3ff 0px 2px 0px 0px;
+    color: #2D429D;
+    text-align: center;
+    background: white;
+    width: 120px;
+    min-width: 50px;
+    height: 40px;
+    display: block;
+}
+
+.sidebar-content .price-btn {
+    outline: none;
+    border: 1px solid white;
+    box-shadow: #e2f3ff 0px 2px 0px 0px;
+    color: #2D429D;
+    text-align: center;
+    background: white;
+    width: 130px;
+    min-width: 60px;
+    height: 55px;
+    display: block;
+    margin: 5px 0px;
+}
+
+.sidebar-content button:hover {
+    color: white;
+    background: #4d4aef;
+
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 24px;
+    gap: 5px;
+}
+
+.content-header {
+    color: #364e83;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "roboto", sans-serif;
+    padding-left: 20px;
+}
+
+.content-header-2 {
+    margin-top: 20px;
+    color: #364e83;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "roboto", sans-serif;
+    padding-left: 20px;
+}
+
+
+/*Page styles*/
+
+
+/*Checkboxes styles*/
+.checkbox-align {
+    margin: 20px auto auto 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 14px/20px;
+    font-weight: 400;
+    color: #192666;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.checkbox+label:last-child {
+    margin-bottom: 0;
+}
+
+.checkbox+label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2D429D;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+.checkbox:checked+label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

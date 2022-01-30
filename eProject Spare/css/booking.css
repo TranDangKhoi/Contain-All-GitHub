@@ -1,0 +1,129 @@
+*{
+    font-family: "roboto",sans-serif;
+}
+
+.booking-section{
+    background: url("../img/travel-bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:50px;
+    background-position: 80% 74%;
+    margin:5px auto;
+    background-attachment: fixed;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.booking-container{
+    background:white;
+    margin: 0 auto 0;
+    max-width: 920px;
+    position:relative;
+    border-radius:12px 12px 0 0;
+    margin-top:200px;
+    transform: translateY(50px);
+    height:400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.tabs {
+    text-align: center;
+    display: flex;
+    position: relative;
+    background:#20abe2;
+    border-radius: 12px;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: -2px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.tab-title{
+    display: table;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #20abe2;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom: 5px solid transparent;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: white;
+    color: #20abe2;
+}
+
+.tab-item.active {
+    opacity: 1;
+    color: #20abe2;
+    background:white;
+}
+
+.tab-content {
+    padding: 28px 0;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+ion-icon{
+    transform: translateY(5px);
+}
+
+.booking-icon{
+    font-size:19px;
+    margin-top:-5px;
+}
+
+.glyphicon.glyphicon-calendar{
+    cursor: pointer;
+}
+
+.input-group-addon{
+    cursor:pointer;
+}
+
+.datepicker-style{
+    border-radius: 16px;
+    border: 2px solid rgba(244, 148, 51, 0.5);
+    pointer-events: none;
+}
+
+#disable-pointer-event{
+    pointer-events: none;
+}
