@@ -17,12 +17,11 @@
   height: 324px;
   width: 216px;
   max-width: 350px;
-  background: red;
   background-size: cover;
   position: relative;
   transition: 0.4s;
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .discover-image {

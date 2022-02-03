@@ -7,7 +7,6 @@ $(window).scroll(function () {
 });
 $(function () {
   $(".scroll").click(function () {
-    $(".scrolltop").hide();
     $("html,body").animate({
         scrollTop: $(".header-logo").offset().top
       },

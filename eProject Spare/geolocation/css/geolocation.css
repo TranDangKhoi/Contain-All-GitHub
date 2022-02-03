@@ -1,0 +1,52 @@
+input[type="text"] {
+    padding: 6px 12px;
+    font-size: 15px;
+    font-family: "roboto", sans-serif;
+    outline: none;
+}
+
+input[type="button"] {
+    font-size: 15px;
+    padding: 6px 12px;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 6px 15px;
+}
+
+.input-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 700px;
+}
+
+.map-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.whole-map {
+    margin-top: 200px;
+}
+
+.custom-map-control-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-map-control-button:hover {
+    background: #ebebeb;
+}

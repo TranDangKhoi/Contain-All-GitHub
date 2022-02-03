@@ -1,0 +1,86 @@
+.cards {
+    display: flex;
+}
+
+.travel-style-container {
+    margin-top: 160px;
+}
+
+.cards .card-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.cards .card-style {
+    opacity: 0.8;
+    margin: 10px;
+    width: 230px;
+    min-width: 230px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 3px solid #ccc;
+}
+
+.cards .card-style.card-active {
+    border: 3px solid #21a9e1;
+}
+
+.cards .card-style.card-active .card-info {
+    transform: translateY(-100%);
+}
+
+.cards .card-style.card-active .card-title {
+    background: linear-gradient(0deg, rgba(33, 169, 225, 0.8) 20%, transparent);
+}
+
+.cards .card-style.card-active .card-desc {
+    background: rgba(33, 169, 225, 0.8);
+}
+
+.cards .card-style:hover .card-info {
+    transform: translateY(-100%);
+}
+
+.cards .card-style:hover,
+.cards .card-style.card-active {
+    opacity: 1;
+}
+
+
+.cards .card-style.card-active img {
+    filter: blur(5px);
+}
+
+.cards .card-style img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+}
+
+.cards .card-style .card-info {
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    transform: translateY(-30px);
+}
+
+.cards .card-style .card-title {
+    line-height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(52, 53, 53, 0.8) 20%, transparent);
+}
+
+.cards .card-style .card-desc {
+    line-height: 16px;
+    font-size: 13px;
+    padding: 0 10px 10px 10px;
+    background: rgba(52, 53, 53, 0.8);
+}

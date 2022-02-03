@@ -1,0 +1,100 @@
+.go-with-label {
+    display: block;
+}
+
+.red-star {
+    color: red;
+}
+
+.go-with-flex {
+    display: inline-block;
+    margin: 20px;
+}
+
+.person {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    caret-color: transparent;
+    outline: none;
+    border: 2px solid #e6e6e6;
+    transition: all 200ms ease-in-out;
+    padding: 5px;
+}
+
+.person:focus {
+    border: 2px solid transparent;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+.remind-us {
+    margin-top: 10px;
+}
+
+.remind-us-text {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+textarea {
+    transition: all 200ms ease-in-out;
+    border: 2px solid #D3D3D3;
+    font-size: 18px;
+    -webkit-appearance: none;
+    resize: none;
+    margin-left: 5px;
+}
+
+textarea:focus {
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+
+textarea::placeholder {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.input-info {
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 110px auto auto;
+}
+
+.your-name,
+.your-email {
+    font-size: 17px;
+    border: 1px solid #d3d3d3;
+    transition: all 200ms ease-in-out;
+    width: 320px;
+    padding: 5px;
+}
+
+.your-name:focus,
+.your-email:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline: none;
+}
+
+.your-info label {
+    display: block;
+}
+
+.inspire {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.inspire button {
+    padding: 15px 50px;
+    background: #9f1c32;
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}

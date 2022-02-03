@@ -1,15 +1,14 @@
 .destrip-form-container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 100px;
     position: relative;
     top: 10px;
-    left: 100px;
+    left: 300px;
+    z-index: 1;
 }
 
 .progress-step {
     display: inline-block;
-
 }
 
 .step {
@@ -69,6 +68,25 @@
     text-decoration: none;
 }
 
+.step-4 {
+    border-radius: 6px;
+    padding: 10px 15px 14px;
+    text-align: left;
+    background: grey;
+    font-size: 16px;
+
+}
+
+.step-4:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.step-4:link {
+    color: white;
+    text-decoration: none;
+}
+
 
 .active-step {
     border-radius: 6px;
@@ -98,4 +116,8 @@
     padding: 4px;
     text-align: center;
     color: black;
+}
+
+.form-container {
+    padding-left: 100px;
 }

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Link IonicIconV5 to website -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/048ff71d54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/why-choose-us.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="css/geolocation.css">
+    <title>Pleasant Tour's Map</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//maps.google.com/maps/api/js?libraries=places&key=AIzaSyAuqtG8XhmKQPGoYpFi9dqZmhZTDWGCxE0">
+    </script>
+</head>
+
+<body onload="javascript: realtimeClock();" id="body">
+    <script src="../js/clock.js"></script>
+    <section class="header-section">
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content-overlay">
+                <div class="close-btn" onclick="togglePopup(); enableScrolling(); return false;">&times</div>
+                <h1>Liên hệ chúng tôi để được phục vụ tận tình</h1>
+                <div class="hotline-content">
+                    <div class="left-hotline">
+                        <div class="hotline-inner">
+                            <div class="hotline">Gọi qua Phone & Whatsapp:</div>
+                            <div onclick="callKhoi();" class="hotline-number">+84&nbsp;123&nbsp;456&nbsp;789</div>
+                        </div>
+                        <div class="whatsapp-inner">
+                            <div class="whatsapp">Liên hệ qua Email:</div>
+                            <div onclick="mailToKhoi();" class="whatsapp-number">khoitdth2107024@fpt.edu.vn</div>
+                        </div>
+                        <div class="facebook-inner">
+                            <div class="facebook">Liên hệ qua Facebook:</div>
+                            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="facebook-link"
+                                    target="_blank">https://www.facebook.com/T2108A-G3Buzzin</a></div>
+                        </div>
+                    </div>
+                    <div class="right-hotline">
+                        <h3 class="right-hotline-title">Lịch làm việc của công ty</h3>
+                        <table>
+                            <tr>
+                                <td> Thứ 2 - Thứ 6</td>
+                                <td>8:30AM - 21:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thứ 7</td>
+                                <td>10:00AM - 19:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Chủ nhật</td>
+                                <td>Chỉ hồi âm qua email</td>
+                            </tr>
+                        </table>
+                        <h3 class="right-hotline-title">Ứng dụng liên lạc</h3>
+                        <div class="icon-column">
+                            <div class="boxed">
+                                <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+                            </div>
+                            <a href="https://www.whatsapp.com/download" class="download-whatsapp" id="download"
+                                target="_blank">Download
+                                WhatsApp</a>
+                        </div>
+                        <div class="icon-column">
+                            <div class="boxed-2">
+                                <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                            </div>
+                            <a href="https://www.microsoft.com/en-us/p/facebook/9wzdncrfj2wl#activetab=pivot:overviewtab"
+                                class="download-facebook" id="download" target="_blank">Download Facebook</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="header-container">
+                <h1 class="header-logo">Pleasant Tours</h1>
+            </div>
+            <nav>
+                <div class="col-flexs">
+                    <div class="above-nav">
+                        <div class="above-nav-inner">
+                            <div class="btn-contact">
+                                <a href="#" onclick="togglePopup(); disableScrolling();" class="btn-contact-inner">Liên
+                                    hệ</a>
+                            </div>
+                            <form role="search" action="#" class="search-form" data-metatip="true">
+                                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar">
+                            </form>
+                            <div class="btn-search">
+                                <button type="submit" class="btn-search-inner">
+                                    <img src="../img/search-icon.png" alt="Search" class="search-icon">
+                                </button>
+                            </div>
+                            <div class="btn-notification">
+                                <button type="submit" class="btn-notification-inner">
+                                    <img src="../img/notification.png" alt="Notification" class="notification-icon">
+                                </button>
+                            </div>
+                            <div class="welcome-feature">
+                                <h2 class="typing" id="clock"></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="under-nav">
+                        <ul>
+                            <li><a class="main-a" href="../design1.html">Trang chủ</a></li>
+                            <li class="drop-2"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Du Lịch
+                                    Trong Nước <div class="plus-mark">+
+                                    </div></a>
+                                <div class="dropdownContain-2">
+                                    <div class="dropOut-2">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><a class="minor-a" href="../Ha Noi Page/hanoi.html"> Du Lịch Hà Nội</a>
+                                            </li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/halong.html">Du Lịch Hạ
+                                                    Long</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/danang.html">Du lịch Đà
+                                                    Nẵng</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/phuquoc.html">Du lịch Phú
+                                                    Quốc</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/quangbinh.html">Du lịch Quảng
+                                                    Bình</a></li>
+                                            <li><a class="minor-a" href="Ha Noi Page/dalat.html">Du lịch Đà
+                                                    Lạt</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/seeall.html">Xem tất cả
+                                                    Tour</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="main-a" href="../DesUrTrip/desurtrip.html">Thiết Kế Chuyến Đi</a></li>
+                            <li class="drop"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Xem thêm
+                                    <div class="plus-mark">+</div></a>
+                                <div class="dropdownContain">
+                                    <div class="dropOut">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li>Sự Kiện Ưu Đãi</li>
+                                            <a href="../aboutus/aboutus.html">
+                                                <li>Về Chúng Tôi</li>
+                                            </a>
+                                            <li>Xem Vị Trí Hiện Tại</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <div class="whole-map">
+            <div class="input-wrapper">
+                <form id="input-form">
+                    <input type="text" name="address" id="address" placeholder="Địa điểm bạn muốn tìm">
+                    <input id="address-btn" type="submit" value="Tìm">
+                </form>
+
+            </div>
+            <div class="map-wrapper">
+                <div id="map-canvas" class="map-canvas"></div>
+            </div>
+        </div>
+
+        <script src="js/geolocation.js"></script>
+        <script src="../js/redirect.js"></script>
+        <script src="../js/contact.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/scroll-to-top.js"></script>
+        <script src="../js/hide-option.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-addr">
+        <img src="../img/removed-bg-pleasant-tours.png" class="footer-logo">
+        <h2>Liên hệ</h2>
+        <address>
+            8, Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội<br>
+            <a class="footer-btn" href="mailto:khoitdth2107024@fpt.edu.vn">Liên hệ chúng tôi qua Email</a>
+        </address>
+    </div>
+    <ul class="footer-nav">
+        <li class="nav-item">
+            <h2 class="nav-title">Trang chủ</h2>
+
+            <ul class="nav-ul">
+                <li>
+                    <a class="facebook-footer" href="https://www.facebook.com/aptech.fpt" target="_blank">Facebook</a>
+                </li>
+
+                <li>
+                    <a class="zalo-footer" href="javascript:void(0)">Zalo</a>
+                </li>
+
+                <li>
+                    <a class="instagram-footer" href="https://www.instagram.com/aptechvn.official/"
+                        target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-item-extra">
+            <h2 class="nav-title">Giới thiệu về Pleasant Tours</h2>
+
+            <ul class="nav-ul nav-ul-extra">
+                <li>
+                    <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Báo chí</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Tài nguyên và chính sách</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Gửi hỗ trợ</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Tin cậy & An toàn</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <h2 class="nav-title">Thông tin</h2>
+
+            <ul class="foot-ul-2 nav-ul">
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Chính sách về quyền riêng tư</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Điều khoản sử dụng</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Cách thức hoạt động của trang web</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="legal">
+        <p>&copy; 2022 Pleasant Tours. All rights reserved.</p>
+        <div class="legal-links">
+            <span><img class="footer-img" src="https://aptech.fpt.edu.vn/wp-content/uploads/2020/11/logo.png"
+                    alt=""></span>
+        </div>
+    </div>
+</footer>
+
+
+</html>

@@ -151,6 +151,7 @@ nav ul li.drop {
   z-index: 2;
   left: 50%;
   margin-left: -80px;
+  margin-top: -2px;
   /* half of width */
   top: -400px;
 }
@@ -520,6 +521,7 @@ h2.typing::after {
   nav {
     margin: auto auto auto 150px;
   }
+
 }
 
 @media screen and (max-width: 1285px) {

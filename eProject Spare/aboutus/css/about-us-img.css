@@ -1,0 +1,83 @@
+.about-us-container {
+    width: 1000px;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 350px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    width: 750px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.about-subtitle-2 {
+    font-size: 17px;
+    font-weight: 300;
+    width: 1000px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.the-team {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    margin-top: 100px;
+}
+
+.member {
+    display: flex;
+}
+
+.member img {
+    width: 250px;
+    height: 250px;
+}
+
+.member .member-overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    margin-left: 200px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.member-overview .member-info {
+    text-align: left;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.thanks {
+    transform: translateX(340px);
+    font-size: 40px;
+    font-family: "Natalic", "roboto", sans-serif;
+    font-weight: 300;
+    margin-top: 40px;
+}

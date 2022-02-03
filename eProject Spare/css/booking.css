@@ -1,29 +1,31 @@
-*{
-    font-family: "roboto",sans-serif;
+* {
+    font-family: "roboto", sans-serif;
 }
 
-.booking-section{
+.booking-section {
     background: url("../img/travel-bg-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top:50px;
+    padding-top: 50px;
     background-position: 80% 74%;
-    margin:5px auto;
+    margin: 5px auto;
     background-attachment: fixed;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    width: 100%;
+    min-width: 100%;
 }
 
-.booking-container{
-    background:white;
+.booking-container {
+    background: white;
     margin: 0 auto 0;
     max-width: 920px;
-    position:relative;
-    border-radius:12px 12px 0 0;
-    margin-top:200px;
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    margin-top: 200px;
     transform: translateY(50px);
-    height:400px;
+    height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -31,7 +33,7 @@
     text-align: center;
     display: flex;
     position: relative;
-    background:#20abe2;
+    background: #20abe2;
     border-radius: 12px;
 }
 
@@ -46,7 +48,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.tab-title{
+.tab-title {
     display: table;
 }
 
@@ -80,7 +82,7 @@
 .tab-item.active {
     opacity: 1;
     color: #20abe2;
-    background:white;
+    background: white;
 }
 
 .tab-content {
@@ -101,29 +103,29 @@
     margin-bottom: 8px;
 }
 
-ion-icon{
+ion-icon {
     transform: translateY(5px);
 }
 
-.booking-icon{
-    font-size:19px;
-    margin-top:-5px;
+.booking-icon {
+    font-size: 19px;
+    margin-top: -5px;
 }
 
-.glyphicon.glyphicon-calendar{
+.glyphicon.glyphicon-calendar {
     cursor: pointer;
 }
 
-.input-group-addon{
-    cursor:pointer;
+.input-group-addon {
+    cursor: pointer;
 }
 
-.datepicker-style{
+.datepicker-style {
     border-radius: 16px;
     border: 2px solid rgba(244, 148, 51, 0.5);
     pointer-events: none;
 }
 
-#disable-pointer-event{
+#disable-pointer-event {
     pointer-events: none;
 }

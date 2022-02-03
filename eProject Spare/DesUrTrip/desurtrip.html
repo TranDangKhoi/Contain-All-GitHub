@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- Link IonicIconV5 to website -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -21,15 +21,10 @@
     <script src="https://kit.fontawesome.com/048ff71d54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/navigation.css" />
-    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/title.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/icon.css">
-    <link rel="stylesheet" href="../css/booking.css">
-    <link rel="stylesheet" href="../css/booking-option.css">
-    <link rel="stylesheet" href="../css/find-tour.css">
-    <link rel="stylesheet" href="../css/products.css">
     <link rel="stylesheet" href="../css/discover-item.css">
     <link rel="stylesheet" href="../css/favorite-destination.css">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
@@ -38,25 +33,19 @@
     <link rel="stylesheet" href="../css/scrollbar.css">
     <link rel="stylesheet" href="css/destrip-form.css">
     <link rel="stylesheet" href="css/location.css">
-    <title>Pleasant Tour</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-
+    <link rel="stylesheet" href="css/datepick.css">
+    <link rel="stylesheet" href="css/travel-style.css">
+    <link rel="stylesheet" href="css/go-with.css">
+    <title>Thiết kế chuyến đi của bạn</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <script src="js/style-active.js"></script>
 </head>
 
 <body onload="javascript: realtimeClock();" id="body">
     <script src="../js/clock.js"></script>
-    <div class="second-popup" id="popup-2">
-        <div class="overlay-2"></div>
-        <div class="content-2">
-            <div class="close-btn" onclick="togglePopup2(); enableScrolling();">&times</div>
-            <h1>Cảm ơn đã sử dụng dịch vụ của Pleasant Tours!</h1>
-            <ion-icon class="checkbox-popup" name="checkmark-circle-outline"></ion-icon>
-            <h3 class="align-next-icon">Done</h3>
-        </div>
-    </div>
     <section class="header-section">
 
         <div class="popup" id="popup-1">
@@ -130,16 +119,16 @@
                                     hệ</a>
                             </div>
                             <form role="search" action="#" class="search-form" data-metatip="true">
-                                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar" />
+                                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar">
                             </form>
                             <div class="btn-search">
                                 <button type="submit" class="btn-search-inner">
-                                    <img src="../img/search-icon.png" alt="Search" class="search-icon" />
+                                    <img src="../img/search-icon.png" alt="Search" class="search-icon">
                                 </button>
                             </div>
                             <div class="btn-notification">
                                 <button type="submit" class="btn-notification-inner">
-                                    <img src="../img/notification.png" alt="Notification" class="notification-icon" />
+                                    <img src="../img/notification.png" alt="Notification" class="notification-icon">
                                 </button>
                             </div>
                             <div class="welcome-feature">
@@ -168,13 +157,15 @@
                                                     Quốc</a></li>
                                             <li><a class="minor-a" href="../Ha Noi Page/quangbinh.html">Du lịch Quảng
                                                     Bình</a></li>
+                                            <li><a class="minor-a" href="Ha Noi Page/dalat.html">Du lịch Đà
+                                                    Lạt</a></li>
                                             <li><a class="minor-a" href="../Ha Noi Page/seeall.html">Xem tất cả
                                                     Tour</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li><a class="main-a" href="javascript:void(0)">Thiết Kế Chuyến Đi</a></li>
+                            <li><a class="main-a" href="../DesUrTrip/desurtrip.html">Thiết Kế Chuyến Đi</a></li>
                             <li class="drop"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Xem thêm
                                     <div class="plus-mark">+</div></a>
                                 <div class="dropdownContain">
@@ -182,8 +173,12 @@
                                         <div class="triangle"></div>
                                         <ul>
                                             <li>Sự Kiện Ưu Đãi</li>
-                                            <li>Về Chúng Tôi</li>
-                                            <li>Xem Vị Trí Hiện Tại</li>
+                                            <a href="../aboutus/aboutus.html">
+                                                <li>Về Chúng Tôi</li>
+                                            </a>
+                                            <a href="../geolocation/index.html">
+                                                <li>Xem Vị Trí Hiện Tại</li>
+                                            </a>
                                         </ul>
                                     </div>
                                 </div>
@@ -195,43 +190,335 @@
             </nav>
             </div>
         </header>
-        <section class="destrip-form">
-            <div class="destrip-form-container">
-                <div class="progress-step">
-                    <a class="active-step step-1" href="#">
-                        <span class="step-number">1</span>
-                        <span class="step-info">Địa điểm</span>
-                    </a>
+        <div class="formall-container">
+            <section class="destrip-form">
+                <div class="destrip-form-container">
+                    <div class="progress-step">
+                        <a class="active-step step-1" href="#popup-1">
+                            <span class="step-number">1</span>
+                            <span class="step-info">Địa điểm</span>
+                        </a>
+                    </div>
+                    <div class="progress-step">
+                        <a class="step-2" href="#2nd-step">
+                            <span class="step-number">2</span>
+                            <span class="step-info">Chọn ngày đi</span>
+                        </a>
+                    </div>
+                    <div class="progress-step">
+                        <a class="step-3" href="#3rd-step">
+                            <span class="step-number">3</span>
+                            <span class="step-info">Phong cách du lịch</span>
+                        </a>
+                    </div>
+                    <div class="progress-step">
+                        <a class="step-4" href="#4th-step">
+                            <span class="step-number">4</span>
+                            <span class="step-info">Thành viên</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="progress-step">
-                    <a class="step-2" href="#">
-                        <span class="step-number">2</span>
-                        <span class="step-info">Chọn ngày đi</span>
-                    </a>
-                </div>
-                <div class="progress-step">
-                    <a class="step-3" href="#">
-                        <span class="step-number">3</span>
-                        <span class="step-info">Phong cách du lịch</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="location">
-            <div class="location-container">
-                <input type="checkbox" class="choose-img">
-                <div class="location-img">
-                    <img src="https://cdn.baogiaothong.vn/files/Baogiay/2016/08/30/6-2219.jpg" alt="">
-                </div>
-            </div>
-        </section>
+            </section>
 
+            <section class="location">
+                <h2>Địa điểm bạn muốn đến ?</h2>
+                <div class="seperate">
+                    Hãy chọn địa điểm bạn muốn đến
+                </div>
+                <div class="location-above" id="location-above">
+                    <div class="card">
+                        <div class="image">
+                            <img
+                                src="https://www.vietfuntravel.com.vn/image/data/Ha-Noi/dia-diem-du-lich-ha-noi/Hoan-Kiem-Lake-7.jpg">
+                            <div class="location-name">Hà Nội</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Hà Nội<br></h1>
+                                <p>Thủ đô hơn 1000 năm tuổi, được biết đến là một địa điểm thu hút nhiều du
+                                    khách trong và ngoài nước</p>
+                                <button class="choose-button">Chọn Hà Nội</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://halongbay.com.vn/Data/images/slide/slide5.jpg">
+                            <div class="location-name">Hạ Long</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Hạ Long<br></h1>
+                                <p>Khu vực được UNESCO công nhận là di sản thế giới gồm 775 hòn
+                                    đảo, giới hạn bởi 3 điểm: đảo Cống Tây, đảo Đầu Gỗ và đảo Đầu
+                                    Bê. </p>
+                                <button class="choose-button">Chọn Hạ Long</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://media.travel.com.vn/Advertisings/bn_211228_danang.jpg">
+                            <div class="location-name">Đà Nẵng</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Đà Nẵng<br></h1>
+                                <p>Thành phố lớn thứ 4 ở Việt Nam về đô thị hóa và phát triển kinh tế – xã hội, nằm trên
+                                    bờ Biển Đông có cửa sông Hàn.
+                                </p>
+
+                                <button class="choose-button">Chọn Đà Nẵng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-below">
+                    <div class="card">
+                        <div class="image">
+                            <img
+                                src="https://univietravel.com/uploads/diem-den/vietnam/phuquocdaongoc/phu-quoc-dao-ngoc-viet-nam-3.jpg">
+                            <div class="location-name">Phú Quốc</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Phú Quốc<br></h1>
+                                <p>Thiên đường nhiệt đới nằm trong Vịnh Thái Lan - hòn đảo lớn nhất của Việt Nam nằm ở
+                                    phía Tây Nam.</p>
+                                <button class="choose-button">Chọn Phú Quốc</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img
+                                src="https://mytourcdn.com/upload_images/Image/Articles%20Location/B%C3%A3i%20%C4%91%C3%A1%20Nh%E1%BA%A3y/Hung-vi-bai-da-nhay_01b.jpg">
+                            <div class="location-name">Quảng Bình</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Quảng Bình<br></h1>
+                                <p>Quảng Bình giao thoa của nhiều luồng văn hoá, lưu giữ được nhiều di tích khác nhau,
+                                    và
+                                    những phong cảnh kỳ thú. </p>
+                                <button class="choose-button">Chọn Hạ Long</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://dulichtoday.vn/wp-content/uploads/2018/12/vuon-hoa-da-lat-1.jpg">
+                            <div class="location-name">Đà Lạt</div>
+                        </div>
+                        <div class="details">
+                            <div class="center">
+                                <h1>Đà Lạt<br></h1>
+                                <p>Thành phố nhỏ thuộc tỉnh Lâm Đồng, có khí hậu khá mát
+                                    mẻ, trong lành, rất thích hợp cho hoạt động du lịch, tham quan, nghỉ dưỡng.
+                                </p>
+
+                                <button class="choose-button">Chọn Đà Lạt</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <h2 id="2nd-step">Bạn dự định đi vào lúc nào ?</h2>
+                    <div class="seperate"></div>
+                    <div class="quantity">
+                        <label for="number">Số ngày cho chuyến đi của bạn</label>
+                        <input class="travel-days" type="number" min="1" max="60" step="1" value="1" name="number">
+                    </div>
+                    <div class="date-form-container ">
+                        <input type="radio" id="radio-1" class="radio-1" name="radio" checked>
+                        <label for="radio" class="start-date">
+                            Tôi biết ngày khởi hành
+                        </label>
+
+                    </div>
+                    <div class="col-sm-6 defined">
+                        <div class="form-group container-date">
+                            <div class="input-group" id="datepick">
+                                <input type="text" class="form-control" id="disable-pointer-event">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-not-defined">
+                        <input type="radio" id="radio-2" class="radio-2" name="radio">
+                        <label for="radio" class="not-define">
+                            Tôi chưa rõ ngày khởi hành
+                        </label>
+                    </div>
+                    <br><br>
+                    <div class="travel-style-container">
+                        <h2 id="3rd-step">Phong cách du lịch của bạn ?</h2>
+                        <div class="seperate">Đâu là sự lựa chọn ưu tiên của bạn? (Hãy chọn ít nhất 1 phong cách)</div>
+                        <div class="travel-style-above">
+                            <div class="cards">
+
+                                <div class="card-style" id="card-style">
+                                    <div class='card-image'>
+                                        <img
+                                            src='https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/320125_2200-1200x628.jpg' />
+                                    </div>
+                                    <div class='card-info'>
+                                        <div class='card-title'>Trải nghiệm các món ăn</div>
+                                        <div class='card-desc'>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-style" id="card-style">
+                                    <div class='card-image'>
+                                        <img
+                                            src='https://media.istockphoto.com/photos/portrait-of-happy-vietnamese-young-girl-mekong-river-delta-vietnam-picture-id953601792?b=1&k=20&m=953601792&s=170667a&w=0&h=yRRokWV7uXS9RwKcGENhf-NZQBxh_egHzgD9oBkeoIs=' />
+                                    </div>
+                                    <div class='card-info'>
+                                        <div class='card-title'>Văn hóa & Cuộc sống</div>
+                                        <div class='card-desc'>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-style" id="card-style">
+                                    <div class='card-image'>
+                                        <img
+                                            src='https://media.healthplus.vn/thumb_x650x382/Images/Uploaded/Share/2018/08/31/lam-sao-nghi-ngoi-thu-gian-cuoi-tuan-de-tang-hieu-suat-lam-viec11535705656.jpg' />
+                                    </div>
+                                    <div class='card-info'>
+                                        <div class='card-title'>Thư giãn & Nghỉ ngơi</div>
+                                        <div class='card-desc'>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-style" id="card-style">
+                                    <div class='card-image'>
+                                        <img
+                                            src='https://www.sensasia.com/wp-content/uploads/2018/05/Nature-Active.jpg' />
+                                    </div>
+                                    <div class='card-info'>
+                                        <div class='card-title'>Thiên nhiên & Tạo hóa</div>
+                                        <div class='card-desc'>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-style-bottom">
+                        <div class="cards">
+
+                            <div class="card-style" id="card-style">
+                                <div class='card-image'>
+                                    <img
+                                        src='data:image/jpeg;base64,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' />
+                                </div>
+                                <div class='card-info'>
+                                    <div class='card-title'>Du lịch cùng gia đình</div>
+                                    <div class='card-desc'>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-style" id="card-style">
+                                <div class='card-image'>
+                                    <img
+                                        src='https://youthincmag.com/wp-content/uploads/2011/12/luxury_home_41-min.jpg' />
+                                </div>
+                                <div class='card-info'>
+                                    <div class='card-title'>Sang trọng & Quý phái</div>
+                                    <div class='card-desc'>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-style" id="card-style">
+                                <div class='card-image'>
+                                    <img
+                                        src='https://media.wired.com/photos/5ec6fb698971d7886fd36024/191:100/w_2291,h_1200,c_limit/astronaut-urine-elena-lacey-wired-science.jpg' />
+                                </div>
+                                <div class='card-info'>
+                                    <div class='card-title'>Khám phá & nghiên cứu</div>
+                                    <div class='card-desc'>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-style" id="card-style">
+                                <div class='card-image'>
+                                    <img
+                                        src='https://sukienachau.com/wp-content/uploads/2021/08/loi-ich-cua-team-building.jpg' />
+                                </div>
+                                <div class='card-info'>
+                                    <div class='card-title'>Teaming & Building</div>
+                                    <div class='card-desc'>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 id="4th-step">Bạn đi cùng với những ai?</h2>
+                    <div class="seperate"></div>
+                    <div>
+                        <div class="go-with-container">
+                            <h3>Số lượng hành khách của chuyến đi <span class="red-star">*</span></h3>
+                            <div class="go-with">
+                                <div class="go-with-flex">
+                                    <label for="go-with" class="go-with-label">Trẻ em (2-6 tuổi)</label>
+                                    <input type="number" min="1" step="1" class="person" name="go-with">
+                                </div>
+                                <div class="go-with-flex">
+                                    <label for="go-with" class="go-with-label">Thanh niên (6-18 tuổi)</label>
+                                    <input type="number" min="1" step="1" class="person" name="go-with">
+                                </div>
+                                <div class="go-with-flex">
+                                    <label for="go-with" class="go-with-label">Người lớn tuổi (18+)</label>
+                                    <input type="number" min="1" step="1" class="person" name="go-with">
+                                </div>
+                                <div class="remind-us">
+                                    <h3 class="remind-us-text">Bạn có muốn nhắc nhở chúng tôi về vấn đề gì không?</h3>
+                                    <textarea name="textarea" id="textarea"
+                                        placeholder="Càng nhiều thứ chúng tôi biết thêm về bạn, những trải nghiệm của bạn cũng càng được tốt hơn!"
+                                        cols="85" rows="7"></textarea>
+                                </div>
+                                <div class="your-info">
+                                    <div class="input-info">
+                                        <label for="your-name">Tên của bạn là? <span class="red-star">*</span></label>
+                                        <input type="text" class="your-name" name="your-name">
+                                    </div>
+                                    <div class="input-info">
+                                        <label for="your-email">Email của bạn là ? <span
+                                                class="red-star">*</span></label>
+                                        <input type="text" class="your-email" name="your-email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inspire">
+                            <button>TÌM TOUR THEO CẢM HỨNG CỦA BẠN</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <script src="js/change-on-scroll.js"></script>
         <script src="../js/redirect.js"></script>
         <script src="../js/contact.js"></script>
         <script src="../js/jquery.js"></script>
         <script src="../js/scroll-to-top.js"></script>
-
+        <script src="../js/hide-option.js"></script>
+        <script src="js/quantity-change.js"></script>
+        <script src="js/style-active.js"></script>
         <!-- Javascript from this page -->
 
 
@@ -240,15 +527,15 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/JavaScript">
             $(function() {              
            // Bootstrap DateTimePicker v4
-           $('#datepicker').datetimepicker({
+           $('#datepick').datetimepicker({
                  format: 'DD/MM/YYYY'
            });
         }); 
   </script>
+
 
         <footer class="footer">
             <div class="footer-addr">
@@ -285,7 +572,7 @@
 
                     <ul class="nav-ul nav-ul-extra">
                         <li>
-                            <a class="f-letter" href="javascript:void(0)">Về chúng tôi</a>
+                            <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
                         </li>
 
                         <li>
