@@ -1,0 +1,243 @@
+.price-table {
+    background: white;
+    border: 1px solid #eee;
+    width: 380px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.rwd-table tr:first-child td {
+    padding-top: 30px;
+}
+
+.rwd-table tr:last-child td {
+    padding-bottom: 30px;
+}
+
+.rwd-table tr {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.rwd-table tr td {
+    padding-bottom: 12px;
+}
+
+
+td.cat-name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    transform: translateX(5px);
+}
+
+td.cat-info {
+    transform: translateX(12px);
+    float: left;
+    display: table-cell;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+td.tour-code {
+    color: #d82727;
+}
+
+td.tour-cat {
+    color: #0062a7;
+    cursor: pointer;
+}
+
+.cat-icon {
+    font-size: 15px;
+    color: grey;
+    opacity: 0.6;
+}
+
+.tour-price {
+    color: #d82727;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* Copy to clipboard css */
+.contact {
+    background-color: #fff;
+    padding: 15px;
+    max-width: 200px;
+    margin: 30px auto;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    transform: translateY(-2px);
+}
+
+/* Copy to clipboard css */
+
+/* Button CSS */
+
+
+
+
+.button {
+    transform: translate(20px, 20px);
+    width: 380px;
+    height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: 500ms all ease-out;
+    background-color: red;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.button:after {
+    position: absolute;
+    transition: 450ms;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(to right top, #ff9671, #ffa553, #f6bb31, #d9d306, #a8eb12);
+}
+
+.button::after {
+    height: 120%;
+    left: -10%;
+    transform: skewX(135deg);
+    z-index: -1;
+}
+
+.button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover::after {
+    left: -10%;
+    width: 120%;
+}
+
+.button2 {
+    transform: translate(20px, 40px);
+    width: 380px;
+    height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: 500ms all ease-out;
+    background: linear-gradient(to right, #067dff, #006aff, #0055ff, #003aff, #1600ff);
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.button2:after {
+    position: absolute;
+    transition: 450ms;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(to right top, #ff9671, #ffa553, #f6bb31, #d9d306, #a8eb12);
+}
+
+.button2::after {
+    height: 120%;
+    left: -10%;
+    transform: skewX(135deg);
+    z-index: -1;
+}
+
+.button2:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.button2:hover::after {
+    left: -10%;
+    width: 120%;
+}
+
+/* Button CSS */
+
+/* See More */
+.see-more {
+    width: 380px;
+    height: 144px;
+    transform: translate(20px, 30px);
+    cursor: pointer;
+    position: relative;
+    pointer-events: all;
+}
+
+.see-more-container {
+    position: relative;
+    color: white;
+    font-size: 21px;
+    pointer-events: none;
+}
+
+.centered {
+    position: absolute;
+    right: 280px;
+    bottom: 40px;
+    z-index: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    color: white;
+}
+
+.centered-2 {
+    position: absolute;
+    right: 200px;
+    bottom: 0px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.centered-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+button.show-all {
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #333333;
+    line-height: 18px;
+    pointer-events: all;
+}
+
+button.show-all:hover {
+    background: #D4D4D4;
+    pointer-events: all;
+}

@@ -1,8 +1,8 @@
 $(window).scroll(function () {
   if ($(this).scrollTop() > 1200) {
-    $(".scrolltop:hidden").stop(true, true).fadeIn();
+    $(".scrolltop:hidden").fadeIn("500");
   } else {
-    $(".scrolltop").stop(true, true).fadeOut();
+    $(".scrolltop").fadeOut("500");
   }
 });
 $(function () {

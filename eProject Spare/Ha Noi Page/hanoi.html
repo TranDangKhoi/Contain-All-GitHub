@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- Link IonicIconV5 to website -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5e5aa9c9c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
@@ -37,726 +37,723 @@
     <link rel="manifest" href="../favicon_io/site.webmanifest" />
 </head>
 
-<body>
+<body onload="javascript: realtimeClock();" id="body">
+    <script src="../js/clock.js"></script>
+    <section class="header-section">
 
-    <body onload="javascript: realtimeClock();" id="body">
-        <script src="../js/clock.js"></script>
-        <section class="header-section">
-
-            <div class="popup" id="popup-1">
-                <div class="overlay"></div>
-                <div class="content-overlay">
-                    <div class="close-btn" onclick="togglePopup(); enableScrolling(); return false;">&times</div>
-                    <h1>Liên hệ chúng tôi để được phục vụ tận tình</h1>
-                    <div class="hotline-content">
-                        <div class="left-hotline">
-                            <div class="hotline-inner">
-                                <div class="hotline">Gọi qua Phone & Whatsapp:</div>
-                                <div onclick="callKhoi();" class="hotline-number">+84&nbsp;123&nbsp;456&nbsp;789</div>
-                            </div>
-                            <div class="whatsapp-inner">
-                                <div class="whatsapp">Liên hệ qua Email:</div>
-                                <div onclick="mailToKhoi();" class="whatsapp-number">khoitdth2107024@fpt.edu.vn</div>
-                            </div>
-                            <div class="facebook-inner">
-                                <div class="facebook">Liên hệ qua Facebook:</div>
-                                <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="facebook-link"
-                                        target="_blank">https://www.facebook.com/T2108A-G3Buzzin</a></div>
-                            </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content-overlay">
+                <div class="close-btn" onclick="togglePopup(); enableScrolling(); return false;">&times</div>
+                <h1>Liên hệ chúng tôi để được phục vụ tận tình</h1>
+                <div class="hotline-content">
+                    <div class="left-hotline">
+                        <div class="hotline-inner">
+                            <div class="hotline">Gọi qua Phone & Whatsapp:</div>
+                            <div onclick="callKhoi();" class="hotline-number">+84&nbsp;123&nbsp;456&nbsp;789</div>
                         </div>
-                        <div class="right-hotline">
-                            <h3 class="right-hotline-title">Lịch làm việc của công ty</h3>
-                            <table>
-                                <tr>
-                                    <td> Thứ 2 - Thứ 6</td>
-                                    <td>8:30AM - 21:30PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Thứ 7</td>
-                                    <td>10:00AM - 19:30PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Chủ nhật</td>
-                                    <td>Chỉ hồi âm qua email</td>
-                                </tr>
-                            </table>
-                            <h3 class="right-hotline-title">Ứng dụng liên lạc</h3>
-                            <div class="icon-column">
-                                <div class="boxed">
-                                    <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
-                                </div>
-                                <a href="https://www.whatsapp.com/download" class="download-whatsapp" id="download"
-                                    target="_blank">Download
-                                    WhatsApp</a>
-                            </div>
-                            <div class="icon-column">
-                                <div class="boxed-2">
-                                    <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-                                </div>
-                                <a href="https://www.microsoft.com/en-us/p/facebook/9wzdncrfj2wl#activetab=pivot:overviewtab"
-                                    class="download-facebook" id="download" target="_blank">Download Facebook</a>
-                            </div>
-
+                        <div class="whatsapp-inner">
+                            <div class="whatsapp">Liên hệ qua Email:</div>
+                            <div onclick="mailToKhoi();" class="whatsapp-number">khoitdth2107024@fpt.edu.vn</div>
                         </div>
+                        <div class="facebook-inner">
+                            <div class="facebook">Liên hệ qua Facebook:</div>
+                            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="facebook-link"
+                                    target="_blank">https://www.facebook.com/T2108A-G3Buzzin</a></div>
+                        </div>
+                    </div>
+                    <div class="right-hotline">
+                        <h3 class="right-hotline-title">Lịch làm việc của công ty</h3>
+                        <table>
+                            <tr>
+                                <td> Thứ 2 - Thứ 6</td>
+                                <td>8:30AM - 21:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thứ 7</td>
+                                <td>10:00AM - 19:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Chủ nhật</td>
+                                <td>Chỉ hồi âm qua email</td>
+                            </tr>
+                        </table>
+                        <h3 class="right-hotline-title">Ứng dụng liên lạc</h3>
+                        <div class="icon-column">
+                            <div class="boxed">
+                                <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+                            </div>
+                            <a href="https://www.whatsapp.com/download" class="download-whatsapp" id="download"
+                                target="_blank">Download
+                                WhatsApp</a>
+                        </div>
+                        <div class="icon-column">
+                            <div class="boxed-2">
+                                <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                            </div>
+                            <a href="https://www.microsoft.com/en-us/p/facebook/9wzdncrfj2wl#activetab=pivot:overviewtab"
+                                class="download-facebook" id="download" target="_blank">Download Facebook</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <header>
-                <div class="header-container">
-                    <h1 class="header-logo">Pleasant Tours</h1>
-                </div>
-                <nav>
-                    <div class="col-flexs">
-                        <div class="above-nav">
-                            <div class="above-nav-inner">
-                                <div class="btn-contact">
-                                    <a href="#" onclick="togglePopup(); disableScrolling();"
-                                        class="btn-contact-inner">Liên hệ</a>
-                                </div>
-                                <form role="search" action="#" class="search-form" data-metatip="true">
-                                    <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar" />
-                                </form>
-                                <div class="btn-search">
-                                    <button type="submit" class="btn-search-inner">
-                                        <img src="../img/search-icon.png" alt="Search" class="search-icon" />
-                                    </button>
-                                </div>
-                                <div class="btn-notification">
-                                    <button type="submit" class="btn-notification-inner">
-                                        <img src="../img/notification.png" alt="Notification"
-                                            class="notification-icon" />
-                                    </button>
-                                </div>
-                                <div class="welcome-feature">
-                                    <h2 class="typing" id="clock"></h2>
-                                </div>
+        </div>
+        <header>
+            <div class="header-container">
+                <h1 class="header-logo">Pleasant Tours</h1>
+            </div>
+            <nav>
+                <div class="col-flexs">
+                    <div class="above-nav">
+                        <div class="above-nav-inner">
+                            <div class="btn-contact">
+                                <a href="#" onclick="togglePopup(); disableScrolling();" class="btn-contact-inner">Liên
+                                    hệ</a>
+                            </div>
+                            <form role="search" action="#" class="search-form" data-metatip="true">
+                                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar" />
+                            </form>
+                            <div class="btn-search">
+                                <button type="submit" class="btn-search-inner">
+                                    <img src="../img/search-icon.png" alt="Search" class="search-icon" />
+                                </button>
+                            </div>
+                            <div class="btn-notification">
+                                <button type="submit" class="btn-notification-inner">
+                                    <img src="../img/notification.png" alt="Notification" class="notification-icon" />
+                                </button>
+                            </div>
+                            <div class="welcome-feature">
+                                <h2 class="typing" id="clock"></h2>
                             </div>
                         </div>
-
-                        <div class="under-nav">
-                            <ul>
-                                <li><a class="main-a" href="../design1.html">Trang chủ</a></li>
-                                <li class="drop-2"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Du Lịch
-                                        Trong Nước <div class="plus-mark">+
-                                        </div></a>
-                                    <div class="dropdownContain-2">
-                                        <div class="dropOut-2">
-                                            <div class="triangle"></div>
-                                            <ul>
-                                                <li><a class="minor-a" href="hanoi.html"> Du Lịch Hà Nội</a>
-                                                </li>
-                                                <li><a class="minor-a" href="halong.html">Du Lịch Hạ
-                                                        Long</a></li>
-                                                <li><a class="minor-a" href="danang.html">Du lịch Đà
-                                                        Nẵng</a></li>
-                                                <li><a class="minor-a" href="phuquoc.html">Du lịch Phú
-                                                        Quốc</a></li>
-                                                <li><a class="minor-a" href="quangbinh.html">Du lịch Quảng
-                                                        Bình</a></li>
-                                                <li><a class="minor-a" href="dalat.html">Du lịch Đà
-                                                        Lạt</a></li>
-                                                <li><a class="minor-a" href="seeall.html">Xem tất cả
-                                                        Tour</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a class="main-a" href="../DesUrTrip/desurtrip.html">Thiết Kế Chuyến Đi</a></li>
-                                <li class="drop"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Xem thêm
-                                        <div class="plus-mark">+</div></a>
-                                    <div class="dropdownContain">
-                                        <div class="dropOut">
-                                            <div class="triangle"></div>
-                                            <ul>
-                                                <li>Sự Kiện Ưu Đãi</li>
-                                                <a href="../aboutus/aboutus.html">
-                                                    <li>Về Chúng Tôi</li>
-                                                </a>
-                                                <a href="../geolocation/index.html">
-                                                    <li>Xem Vị Trí Hiện Tại</li>
-                                                </a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    </div>
-                </nav>
-                </div>
-            </header>
-            <section class="sidebar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="sidebar-nav">
-                                <div class="navbar navbar-default" role="navigation">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                            data-target=".sidebar-navbar-collapse">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <span class="visible-xs navbar-brand">Sidebar menu</span>
-                                    </div>
-                                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
-                                        <ul class="nav navbar-nav">
-                                            <li>
-                                                <div class="content-header">Lựa chọn dòng tour</div>
-                                                <dropdown>
-                                                    <input id="toggle2" type="checkbox">
-                                                    <label for="toggle2" class="animate">Dòng Tour<i
-                                                            class="float-right fa fa-solid fa-chevron-up"></i></label>
-                                                    <ul class="animate">
-                                                        <li class="animate">Tiêu chuẩn<i
-                                                                class="fa float-right fa-regular fa-thumbs-up"></i>
-                                                        </li>
-                                                        <li class="animate">Cao cấp<i
-                                                                class="fa float-right fa-solid fa-couch"></i>
-                                                        </li>
-                                                        <li class="animate">Giá tốt<i
-                                                                class="fa float-right fa-solid fa-comment-dollar"></i>
-                                                        </li>
-                                                    </ul>
-                                                </dropdown>
-                                            </li>
-                                            <li>
-                                                <div class="sidebar-content">
-                                                    <div class="content-header">Số ngày</div>
-                                                    <div class="flex-button">
-                                                        <div class="upper-flex-btn">
-                                                            <button>1-3 ngày</button>
-                                                            <button>4-7 ngày</button>
-                                                        </div>
-                                                        <div class="bottom-flex-btn">
-                                                            <button>8-14 ngày</button>
-                                                            <button>Trên 14 ngày</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content-header-2">Số người</div>
-                                                    <div class="flex-button">
-                                                        <div class="upper-flex-btn">
-                                                            <button>1 người</button>
-                                                            <button>2 người</button>
-                                                        </div>
-                                                        <div class="bottom-flex-btn">
-                                                            <button>3-5 người</button>
-                                                            <button>5+ người</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content-header-2">Phương tiện</div>
-                                                    <div class="flex-button">
-                                                        <div class="upper-flex-btn">
-                                                            <button>Xe ô tô</button>
-                                                            <button>Máy bay</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content-header-2">Ngân sách của quý khách</div>
-                                                    <div class="flex-button">
-                                                        <div class="upper-flex-btn">
-                                                            <button class="price-btn">2.000.000₫ - 4.000.000₫</button>
-                                                            <button class="price-btn">7.000.000₫ - 11.000.000₫</button>
-                                                        </div>
-                                                        <div class="bottom-flex-btn">
-                                                            <button class="price-btn">4.000.000₫ - 7.000.000₫</button>
-                                                            <button class="price-btn">Trên 11.000.000₫</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content-header-2">Hiển thị những chuyến đi có</div>
-                                                    <div class="checkbox-align">
-                                                        <div class="boxes">
-                                                            <input type="checkbox" class="checkbox" id="box-1">
-                                                            <label for="box-1">Khuyến mãi</label>
 
-                                                            <input type="checkbox" class="checkbox" id="box-2">
-                                                            <label for="box-2">Còn chỗ</label>
-                                                        </div>
-                                                    </div>
+                    <div class="under-nav">
+                        <ul>
+                            <li><a class="main-a" href="../design1.html">Trang chủ</a></li>
+                            <li class="drop-2"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Du Lịch
+                                    Trong Nước <div class="plus-mark">+
+                                    </div></a>
+                                <div class="dropdownContain-2">
+                                    <div class="dropOut-2">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><a class="minor-a" href="hanoi.html"> Du Lịch Hà Nội</a>
                                             </li>
-
+                                            <li><a class="minor-a" href="halong.html">Du lịch Hạ
+                                                    Long</a></li>
+                                            <li><a class="minor-a" href="danang.html">Du lịch Đà
+                                                    Nẵng</a></li>
+                                            <li><a class="minor-a" href="phuquoc.html">Du lịch Phú
+                                                    Quốc</a></li>
+                                            <li><a class="minor-a" href="quangbinh.html">Du lịch Quảng
+                                                    Bình</a></li>
+                                            <li><a class="minor-a" href="dalat.html">Du lịch Đà
+                                                    Lạt</a></li>
+                                            <li><a class="minor-a" href="seeall.html">Xem tất cả
+                                                    Tour</a></li>
                                         </ul>
                                     </div>
-                                    <!--/.nav-collapse -->
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="tour-list-above">
-                                <h1 class="tour-list-header">Du lịch Hà Nội</h1>
-                                <div class="tour-list-para">Hà Nội là thủ đô ngàn năm văn hiến, còn lưu dấu nhiều di
-                                    tích
-                                    như <span>Hồ Gươm</span>, <span>Cầu Thê Húc</span>,
-                                    <span>Chùa Quán Sứ</span>, <span>Hồ Tây</span>, 36 phố phường. Hà Nội có bốn mùa,
-                                    luôn
-                                    mang đến nhiều hoài niệm phai, mỗi mùa một vẻ, xuân lễ hội, hạ tươi thắm, thu quyến
-                                    rũ
-                                    và đông ấn tượng. Món ngon có Phở, Chả cá Lã Vọng, bánh tôm Hồ Tây.
-                                    <br><br>
-                                    Đăng ký tour Hà Nội cùng Pleasant Tours, Quý khách có thể đến khám phá các điểm đến
-                                    nổi
-                                    bật
-                                    sau: <span> Hồ Hoàn Kiếm</span>, <span>Đền Ngọc Sơn</span>, <span>Văn Miếu</span>,
-                                    <span>Chùa Trấn Quốc</span>, <span>Lăng Hồ Chủ Tịch</span>, <span>Bảo tàng Hồ Chí
-                                        Minh</span>, <span>Chùa Một Cột</span>, <span>Hoàng Thành Thăng
-                                        Long</span>,<span>Cầu
-                                        Thê Húc</span>, <span>Vườn Quốc Gia Ba Vì</span>,...
-                                    <div class="tour-list-div">Để hiểu hơn về Hà Nội Mời Quý khách tham khảo <span>Kinh
-                                            nghiệm
-                                            du lịch Hà Nội</span></div>
-                                    <div class="tour-list-div">Chúng tôi tìm thấy <span>7</span> tours cho Quý Khách
+                            </li>
+                            <li><a class="main-a" href="../DesUrTrip/desurtrip.html">Thiết Kế Chuyến Đi</a></li>
+                            <li class="drop"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Xem thêm
+                                    <div class="plus-mark">+</div></a>
+                                <div class="dropdownContain">
+                                    <div class="dropOut">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li>Câu hỏi thường gặp</li>
+                                            <a href="../aboutus/aboutus.html">
+                                                <li>Về chúng tôi</li>
+                                            </a>
+                                            <a href="../geolocation/index.html">
+                                                <li>Xem vị trí hiện tại</li>
+                                            </a>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="seperate"></div>
-                            <section class="tour-list-bottom">
-                                <div class="cards">
-                                    <div class="tour-card">
-                                        <img src="https://vcdn-vnexpress.vnecdn.net/2019/06/26/Fansipan-6678-1561549702.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hà Nội - Sapa - Bản Cát Cát - Fansipan -
-                                                    Vịnh Hạ Long</h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDSGN382-193-142412XE-D-F
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hồ Chí Minh
-                                                            <div>Lịch trình 2 ngày 1 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>3.790.000₫</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">3.410.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 10%</span>
-                                                </div>
-                                                <div class="card-watching">944 Quan tâm </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="https://i-dulich.vnecdn.net/2019/10/04/tha-c-ba-n-gio-c-vnexpress-5-1570193128_680x0.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
-                                                    Bằng - Thác Bản Giốc - Hồ Ba Bể</h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDSGN560-002-030222XE-V
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hồ Chí Minh
-                                                            <div>Lịch trình 3 ngày 2 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>4,290,000₫</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">4.090.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 5%</span>
-                                                </div>
-                                                <div class="card-watching">2.2K Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="https://phongnhaexplorer.com/wp-content/uploads/vuon-quoc-gia-phong-nha-ke-bang.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hà Nội - Quảng Bình - Động Phong Nha Bằng
-                                                    Tàu Hỏa (Khoang Giường Nằm)</h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDSGN212-029-829352XE-D
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hồ Chí Minh
-                                                            <div>Lịch trình 4 ngày 3 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>4.990.000₫</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">4,790,000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 10%</span>
-                                                </div>
-                                                <div class="card-watching">701 Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/da_lat/%C4%90%C3%A0%20L%E1%BA%A1t.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hồ Chí Minh - Đà Lạt Sắc Hoa 2022
-                                                </h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDHN923-842-739402XE-D
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hà Nội
-                                                            <div>Lịch trình 3 ngày 2 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>5.199.000đ</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">5.100.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 15%</span>
-                                                </div>
-                                                <div class="card-watching">1.9K Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="https://img5.thuthuatphanmem.vn/uploads/2021/07/16/anh-con-dao-lang-man-dep-nhat_090224193.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hà Nội - Côn Đảo - Bãi Đầm Trầu
-                                                </h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDSGN921-932-739285XE-D
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hồ Chí Minh
-                                                            <div>Lịch trình 3 ngày 2 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">5.500.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale-2">
-                                                    <span>HOT <i class="far fa-surprise"></i></span>
-                                                </div>
-                                                <div class="card-watching">192 Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="http://hanotour.com.vn/upload/images/Dulichtrongnuoc/Condao/cang_ben_dam.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hải Phòng - Côn Đảo
-                                                </h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDHPN832-128-932422XH-D
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hải Phòng
-                                                            <div>Lịch trình 2 ngày 1 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>6.990.000đ</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">5.990.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 15%</span>
-                                                </div>
-                                                <div class="card-watching">1.4K Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tour-card">
-                                        <img src="https://www.vietfuntravel.com.vn/image/data/Hinh-Tay-Nguyen/897-mach-nuoc-10-diem-chup-anh-o-buon-ma-thuot/mach-nuoc-10-diem-chup-anh-o-buon-ma-thuot-dep-chat-ngat-01.jpg"
-                                            alt="Tour Pic" class="card-image" />
-                                        <div class="card-content">
-                                            <div class="card-top">
-                                                <h3 class="card-title">Du lịch Hà Nội - Hạ Long - Buôn Mê Thuột - Pleiku
-                                                </h3>
-                                                <div class="card-tour">
-                                                    <div class="card-tour-info">
-                                                        <div class="card-tour-top">
-                                                            <h4 class="card-tour-id">Mã tour:<br>
-                                                                <ion-icon name="ticket-outline"></ion-icon>
-                                                                NDSGN923-842-739402XE-D
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-tour-content">
-                                                            Nơi khởi hành: TP. Hồ Chí Minh
-                                                            <div>Lịch trình 10 ngày 9 đêm</div>
-                                                            <div class="card-tour-saleprice">
-                                                                Giá: <strike>12.399.000đ</strike>
-                                                                <div class="card-tour-price">
-                                                                    <span class="real-price">10.500.000₫</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="button-flex">
-                                                                <div class="order-button">
-                                                                    <button class="order-button-content"><i
-                                                                            class="fa fa-solid fa-cart-plus"></i>Đặt
-                                                                        ngay</button>
-                                                                </div>
-                                                                <div class="see-detail-button">
-                                                                    <button class="see-detail-content">Xem chi
-                                                                        tiết</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom">
-                                                <div class="card-sale">
-                                                    <span>Giảm 15%</span>
-                                                </div>
-                                                <div class="card-watching">842 Quan tâm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 </div>
+            </nav>
+            </div>
+        </header>
+        <section class="sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="sidebar-nav">
+                            <div class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".sidebar-navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <span class="visible-xs navbar-brand">Sidebar menu</span>
+                                </div>
+                                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <div class="content-header">Lựa chọn dòng tour</div>
+                                            <dropdown>
+                                                <input id="toggle2" type="checkbox">
+                                                <label for="toggle2" class="animate">Dòng Tour<i
+                                                        class="float-right fa fa-solid fa-chevron-up"></i></label>
+                                                <ul class="animate">
+                                                    <li class="animate">Tiêu chuẩn<i
+                                                            class="fa float-right fa-regular fa-thumbs-up"></i>
+                                                    </li>
+                                                    <li class="animate">Cao cấp<i
+                                                            class="fa float-right fa-solid fa-couch"></i>
+                                                    </li>
+                                                    <li class="animate">Giá tốt<i
+                                                            class="fa float-right fa-solid fa-comment-dollar"></i>
+                                                    </li>
+                                                </ul>
+                                            </dropdown>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-content">
+                                                <div class="content-header">Số ngày</div>
+                                                <div class="flex-button">
+                                                    <div class="upper-flex-btn">
+                                                        <button>1-3 ngày</button>
+                                                        <button>4-7 ngày</button>
+                                                    </div>
+                                                    <div class="bottom-flex-btn">
+                                                        <button>8-14 ngày</button>
+                                                        <button>Trên 14 ngày</button>
+                                                    </div>
+                                                </div>
+                                                <div class="content-header-2">Số người</div>
+                                                <div class="flex-button">
+                                                    <div class="upper-flex-btn">
+                                                        <button>1 người</button>
+                                                        <button>2 người</button>
+                                                    </div>
+                                                    <div class="bottom-flex-btn">
+                                                        <button>3-5 người</button>
+                                                        <button>5+ người</button>
+                                                    </div>
+                                                </div>
+                                                <div class="content-header-2">Phương tiện</div>
+                                                <div class="flex-button">
+                                                    <div class="upper-flex-btn">
+                                                        <button>Xe ô tô</button>
+                                                        <button>Máy bay</button>
+                                                    </div>
+                                                </div>
+                                                <div class="content-header-2">Ngân sách của quý khách</div>
+                                                <div class="flex-button">
+                                                    <div class="upper-flex-btn">
+                                                        <button class="price-btn">2.000.000₫ - 4.000.000₫</button>
+                                                        <button class="price-btn">7.000.000₫ - 11.000.000₫</button>
+                                                    </div>
+                                                    <div class="bottom-flex-btn">
+                                                        <button class="price-btn">4.000.000₫ - 7.000.000₫</button>
+                                                        <button class="price-btn">Trên 11.000.000₫</button>
+                                                    </div>
+                                                </div>
+                                                <div class="content-header-2">Hiển thị những chuyến đi có</div>
+                                                <div class="checkbox-align">
+                                                    <div class="boxes">
+                                                        <input type="checkbox" class="checkbox" id="box-1">
+                                                        <label for="box-1">Khuyến mãi</label>
+
+                                                        <input type="checkbox" class="checkbox" id="box-2">
+                                                        <label for="box-2">Còn chỗ</label>
+                                                    </div>
+                                                </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!--/.nav-collapse -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="tour-list-above">
+                            <h1 class="tour-list-header">Du lịch Hà Nội</h1>
+                            <div class="tour-list-para">Hà Nội là thủ đô ngàn năm văn hiến, còn lưu dấu nhiều di
+                                tích
+                                như <span>Hồ Gươm</span>, <span>Cầu Thê Húc</span>,
+                                <span>Chùa Quán Sứ</span>, <span>Hồ Tây</span>, 36 phố phường. Hà Nội có bốn mùa,
+                                luôn
+                                mang đến nhiều hoài niệm phai, mỗi mùa một vẻ, xuân lễ hội, hạ tươi thắm, thu quyến
+                                rũ
+                                và đông ấn tượng. Món ngon có Phở, Chả cá Lã Vọng, bánh tôm Hồ Tây.
+                                <br><br>
+                                Đăng ký tour Hà Nội cùng Pleasant Tours, Quý khách có thể đến khám phá các điểm đến
+                                nổi
+                                bật
+                                sau: <span> Hồ Hoàn Kiếm</span>, <span>Đền Ngọc Sơn</span>, <span>Văn Miếu</span>,
+                                <span>Chùa Trấn Quốc</span>, <span>Lăng Hồ Chủ Tịch</span>, <span>Bảo tàng Hồ Chí
+                                    Minh</span>, <span>Chùa Một Cột</span>, <span>Hoàng Thành Thăng
+                                    Long</span>,<span>Cầu
+                                    Thê Húc</span>, <span>Vườn Quốc Gia Ba Vì</span>,...
+                                <div class="tour-list-div">Để hiểu hơn về Hà Nội Mời Quý khách tham khảo <span>Kinh
+                                        nghiệm
+                                        du lịch Hà Nội</span></div>
+                                <div class="tour-list-div">Chúng tôi tìm thấy <span>7</span> tours cho Quý Khách
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seperate"></div>
+                        <section class="tour-list-bottom">
+                            <div class="cards">
+                                <div class="tour-card">
+                                    <img src="https://vcdn-vnexpress.vnecdn.net/2019/06/26/Fansipan-6678-1561549702.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Sapa - Bản Cát Cát - Fansipan -
+                                                Vịnh Hạ Long</h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDSGN382-193-142412XE-D-F
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hồ Chí Minh
+                                                        <div>Lịch trình 2 ngày 1 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>3.790.000₫</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">3.410.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 10%</span>
+                                            </div>
+                                            <div class="card-watching">944 Quan tâm </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="https://i-dulich.vnecdn.net/2019/10/04/tha-c-ba-n-gio-c-vnexpress-5-1570193128_680x0.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
+                                                Bằng - Thác Bản Giốc - Hồ Ba Bể</h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDSGN560-002-030222XE-V
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hồ Chí Minh
+                                                        <div>Lịch trình 3 ngày 2 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>4,290,000₫</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">4.090.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <a href="../Tour Details/tour-1.html"><button
+                                                                        class="see-detail-content">Xem chi
+                                                                        tiết</button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 5%</span>
+                                            </div>
+                                            <div class="card-watching">2.2K Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="https://phongnhaexplorer.com/wp-content/uploads/vuon-quoc-gia-phong-nha-ke-bang.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Quảng Bình - Động Phong Nha Bằng
+                                                Tàu Hỏa (Khoang Giường Nằm)</h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDSGN212-029-829352XE-D
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hồ Chí Minh
+                                                        <div>Lịch trình 4 ngày 3 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>4.990.000₫</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">4,790,000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 10%</span>
+                                            </div>
+                                            <div class="card-watching">701 Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/da_lat/%C4%90%C3%A0%20L%E1%BA%A1t.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Hồ Chí Minh - Đà Lạt Sắc Hoa
+                                                2022
+                                            </h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDHN923-842-739402XE-D
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hà Nội
+                                                        <div>Lịch trình 3 ngày 2 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>5.199.000đ</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">5.100.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 15%</span>
+                                            </div>
+                                            <div class="card-watching">1.9K Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="https://img5.thuthuatphanmem.vn/uploads/2021/07/16/anh-con-dao-lang-man-dep-nhat_090224193.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Côn Đảo - Bãi Đầm Trầu
+                                            </h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDSGN921-932-739285XE-D
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hồ Chí Minh
+                                                        <div>Lịch trình 3 ngày 2 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">5.500.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale-2">
+                                                <span>HOT <i class="far fa-surprise"></i></span>
+                                            </div>
+                                            <div class="card-watching">192 Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="../img/du-lich-da-nang.png" alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Đà Nẵng - Hội An - Rừng Dừa Bảy
+                                            </h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDHN923-122-521402XE-D
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hà Nội
+                                                        <div>Lịch trình 6 ngày 5 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>8.290.000đ</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">7.870.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 15%</span>
+                                            </div>
+                                            <div class="card-watching">1.9K Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="https://www.vietfuntravel.com.vn/image/data/Hinh-Tay-Nguyen/897-mach-nuoc-10-diem-chup-anh-o-buon-ma-thuot/mach-nuoc-10-diem-chup-anh-o-buon-ma-thuot-dep-chat-ngat-01.jpg"
+                                        alt="Tour Pic" class="card-image" />
+                                    <div class="card-content">
+                                        <div class="card-top">
+                                            <h3 class="card-title">Du lịch Hà Nội - Hạ Long - Buôn Mê Thuột - Pleiku
+                                            </h3>
+                                            <div class="card-tour">
+                                                <div class="card-tour-info">
+                                                    <div class="card-tour-top">
+                                                        <h4 class="card-tour-id">Mã tour:<br>
+                                                            <ion-icon name="ticket-outline"></ion-icon>
+                                                            NDSGN923-842-739402XE-D
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-tour-content">
+                                                        Nơi khởi hành: TP. Hồ Chí Minh
+                                                        <div>Lịch trình 10 ngày 9 đêm</div>
+                                                        <div class="card-tour-saleprice">
+                                                            Giá: <strike>12.399.000đ</strike>
+                                                            <div class="card-tour-price">
+                                                                <span class="real-price">10.500.000₫</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-flex">
+                                                            <div class="order-button">
+                                                                <button class="order-button-content"><i
+                                                                        class="fa fa-solid fa-cart-plus"></i>Đặt
+                                                                    ngay</button>
+                                                            </div>
+                                                            <div class="see-detail-button">
+                                                                <button class="see-detail-content">Xem chi
+                                                                    tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom">
+                                            <div class="card-sale">
+                                                <span>Giảm 15%</span>
+                                            </div>
+                                            <div class="card-watching">842 Quan tâm</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </section>
-            <!-- Javascript from homepage -->
-            <script src="../js/redirect.js"></script>
-            <script src="../js/contact.js"></script>
-            <script src="../js/jquery.js"></script>
-            <script src="../js/scroll-to-top.js"></script>
+            </div>
+            </div>
+            </div>
+        </section>
+        <!-- Javascript from homepage -->
+        <script src="../js/redirect.js"></script>
+        <script src="../js/contact.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/scroll-to-top.js"></script>
+        <script src="../js/change-title.js"></script>
+        <!-- Javascript from this page -->
 
-            <!-- Javascript from this page -->
 
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-            <script type="text/JavaScript">
-                $(function() {              
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/JavaScript">
+            $(function() {              
            // Bootstrap DateTimePicker v4
            $('#datepicker').datetimepicker({
                  format: 'DD/MM/YYYY'
            });
         }); 
   </script>
-    </body>
-    <footer class="footer">
-        <div class="footer-addr">
-            <img src="../img/removed-bg-pleasant-tours.png" class="footer-logo">
-            <h2>Liên hệ</h2>
-            <address>
-                8, Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội<br>
-                <a class="footer-btn" href="mailto:khoitdth2107024@fpt.edu.vn">Liên hệ chúng tôi qua Email</a>
-            </address>
+</body>
+<footer class="footer">
+    <div class="footer-addr">
+        <img src="../img/removed-bg-pleasant-tours.png" class="footer-logo">
+        <h2>Liên hệ</h2>
+        <address>
+            8, Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội<br>
+            <a class="footer-btn" href="mailto:khoitdth2107024@fpt.edu.vn">Liên hệ chúng tôi qua Email</a>
+        </address>
+    </div>
+    <ul class="footer-nav">
+        <li class="nav-item">
+            <h2 class="nav-title">Trang chủ</h2>
+
+            <ul class="nav-ul">
+                <li>
+                    <a class="facebook-footer" href="https://www.facebook.com/aptech.fpt" target="_blank">Facebook</a>
+                </li>
+
+                <li>
+                    <a class="zalo-footer" href="javascript:void(0)">Zalo</a>
+                </li>
+
+                <li>
+                    <a class="instagram-footer" href="https://www.instagram.com/aptechvn.official/"
+                        target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-item-extra">
+            <h2 class="nav-title">Giới thiệu về Pleasant Tours</h2>
+
+            <ul class="nav-ul nav-ul-extra">
+                <li>
+                    <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Báo chí</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Tài nguyên và chính sách</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Gửi hỗ trợ</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Tin cậy & An toàn</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <h2 class="nav-title">Thông tin</h2>
+
+            <ul class="foot-ul-2 nav-ul">
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Chính sách về quyền riêng tư</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Điều khoản sử dụng</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Cách thức hoạt động của trang web</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="legal">
+        <p>&copy; 2022 Pleasant Tours. All rights reserved.</p>
+        <div class="legal-links">
+            <span><img class="footer-img" src="https://aptech.fpt.edu.vn/wp-content/uploads/2020/11/logo.png"
+                    alt=""></span>
         </div>
-        <ul class="footer-nav">
-            <li class="nav-item">
-                <h2 class="nav-title">Trang chủ</h2>
-
-                <ul class="nav-ul">
-                    <li>
-                        <a class="facebook-footer" href="https://www.facebook.com/aptech.fpt"
-                            target="_blank">Facebook</a>
-                    </li>
-
-                    <li>
-                        <a class="zalo-footer" href="javascript:void(0)">Zalo</a>
-                    </li>
-
-                    <li>
-                        <a class="instagram-footer" href="https://www.instagram.com/aptechvn.official/"
-                            target="_blank">Instagram</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item nav-item-extra">
-                <h2 class="nav-title">Giới thiệu về Pleasant Tours</h2>
-
-                <ul class="nav-ul nav-ul-extra">
-                    <li>
-                        <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
-                    </li>
-
-                    <li>
-                        <a class="f-letter" href="javascript:void(0)">Báo chí</a>
-                    </li>
-
-                    <li>
-                        <a class="f-letter" href="javascript:void(0)">Tài nguyên và chính sách</a>
-                    </li>
-
-                    <li>
-                        <a class="p-letter" href="javascript:void(0)">Gửi hỗ trợ</a>
-                    </li>
-
-                    <li>
-                        <a class="p-letter" href="javascript:void(0)">Tin cậy & An toàn</a>
-                    </li>
-
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <h2 class="nav-title">Thông tin</h2>
-
-                <ul class="foot-ul-2 nav-ul">
-                    <li>
-                        <a class="t-letter" href="javascript:void(0)">Chính sách về quyền riêng tư</a>
-                    </li>
-
-                    <li>
-                        <a class="t-letter" href="javascript:void(0)">Điều khoản sử dụng</a>
-                    </li>
-
-                    <li>
-                        <a class="t-letter" href="javascript:void(0)">Cách thức hoạt động của trang web</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="legal">
-            <p>&copy; 2022 Pleasant Tours. All rights reserved.</p>
-            <div class="legal-links">
-                <span><img class="footer-img" src="https://aptech.fpt.edu.vn/wp-content/uploads/2020/11/logo.png"
-                        alt=""></span>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 </html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Link IonicIconV5 to website -->
+    <script src="https://kit.fontawesome.com/5e5aa9c9c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/048ff71d54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/icon.css" />
+    <link rel="stylesheet" href="../css/scroll-to-top.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/hanoi-p.css">
+    <link rel="stylesheet" href="css/hanoi-product.css">
+    <link rel="stylesheet" href="../css/why-choose-us.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/find-tour.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/tour-detail.css">
+    <link rel="stylesheet" href="css/float-book.css">
+    <link rel="stylesheet" href="css/magic-button.css">
+    <link rel="stylesheet" href="css/star-rating.css">
+    <title>Du lịch Miền Bắc Hà Nội - Hà Giang - Cao Bằng - Thác Bản Giốc - Hồ Ba Bể 3N2Đ Bay Vietnam Airlines</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon_io/site.webmanifest" />
+</head>
+
+<body onload="javascript: realtimeClock();" id="body">
+    <script src="../js/clock.js"></script>
+    <section class="header-section">
+        <div class="second-popup" id="popup-2">
+            <div class="overlay-2"></div>
+            <div class="content-2">
+                <div class="close-btn" onclick="togglePopup2(); enableScrolling();">&times</div>
+                <h1>Cảm ơn đã sử dụng dịch vụ của Pleasant Tours!</h1>
+                <ion-icon class="checkbox-popup" name="checkmark-circle-outline"></ion-icon>
+                <h3 class="align-next-icon">Done</h3>
+            </div>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content-overlay">
+                <div class="close-btn" onclick="togglePopup(); enableScrolling(); return false;">&times</div>
+                <h1>Liên hệ chúng tôi để được phục vụ tận tình</h1>
+                <div class="hotline-content">
+                    <div class="left-hotline">
+                        <div class="hotline-inner">
+                            <div class="hotline">Gọi qua Phone & Whatsapp:</div>
+                            <div onclick="callKhoi();" class="hotline-number">+84&nbsp;123&nbsp;456&nbsp;789</div>
+                        </div>
+                        <div class="whatsapp-inner">
+                            <div class="whatsapp">Liên hệ qua Email:</div>
+                            <div onclick="mailToKhoi();" class="whatsapp-number">khoitdth2107024@fpt.edu.vn</div>
+                        </div>
+                        <div class="facebook-inner">
+                            <div class="facebook">Liên hệ qua Facebook:</div>
+                            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="facebook-link"
+                                    target="_blank">https://www.facebook.com/T2108A-G3Buzzin</a></div>
+                        </div>
+                    </div>
+                    <div class="right-hotline">
+                        <h3 class="right-hotline-title">Lịch làm việc của công ty</h3>
+                        <table>
+                            <tr>
+                                <td> Thứ 2 - Thứ 6</td>
+                                <td>8:30AM - 21:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thứ 7</td>
+                                <td>10:00AM - 19:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Chủ nhật</td>
+                                <td>Chỉ hồi âm qua email</td>
+                            </tr>
+                        </table>
+                        <h3 class="right-hotline-title">Ứng dụng liên lạc</h3>
+                        <div class="icon-column">
+                            <div class="boxed">
+                                <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+                            </div>
+                            <a href="https://www.whatsapp.com/download" class="download-whatsapp" id="download"
+                                target="_blank">Download
+                                WhatsApp</a>
+                        </div>
+                        <div class="icon-column">
+                            <div class="boxed-2">
+                                <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                            </div>
+                            <a href="https://www.microsoft.com/en-us/p/facebook/9wzdncrfj2wl#activetab=pivot:overviewtab"
+                                class="download-facebook" id="download" target="_blank">Download Facebook</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="header-container">
+                <h1 class="header-logo">Pleasant Tours</h1>
+            </div>
+            <nav>
+                <div class="col-flexs">
+                    <div class="above-nav">
+                        <div class="above-nav-inner">
+                            <div class="btn-contact">
+                                <a href="#" onclick="togglePopup(); disableScrolling();" class="btn-contact-inner">Liên
+                                    hệ</a>
+                            </div>
+                            <form role="search" action="#" class="search-form" data-metatip="true">
+                                <input type="text" placeholder="Điểm đến tiếp theo của bạn?" class="search-bar" />
+                            </form>
+                            <div class="btn-search">
+                                <button type="submit" class="btn-search-inner">
+                                    <img src="../img/search-icon.png" alt="Search" class="search-icon" />
+                                </button>
+                            </div>
+                            <div class="btn-notification">
+                                <button type="submit" class="btn-notification-inner">
+                                    <img src="../img/notification.png" alt="Notification" class="notification-icon" />
+                                </button>
+                            </div>
+                            <div class="welcome-feature">
+                                <h2 class="typing" id="clock"></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="under-nav">
+                        <ul>
+                            <li><a class="main-a" href="../design1.html">Trang chủ</a></li>
+                            <li class="drop-2"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Du Lịch
+                                    Trong Nước <div class="plus-mark">+
+                                    </div></a>
+                                <div class="dropdownContain-2">
+                                    <div class="dropOut-2">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><a class="minor-a" href="../Ha Noi Page/hanoi.html"> Du lịch Hà Nội</a>
+                                            </li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/halong.html">Du lịch Hạ
+                                                    Long</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/danang.html">Du lịch Đà
+                                                    Nẵng</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/phuquoc.html">Du lịch Phú
+                                                    Quốc</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/quangbinh.html">Du lịch Quảng
+                                                    Bình</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/dalat.html">Du lịch Đà
+                                                    Lạt</a></li>
+                                            <li><a class="minor-a" href="../Ha Noi Page/seeall.html">Xem tất cả
+                                                    Tour</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="main-a" href="../DesUrTrip/desurtrip.html">Thiết Kế Chuyến Đi</a></li>
+                            <li class="drop"><a class="plus-mark-rotate main-a" href="javascript:void(0)">Xem thêm
+                                    <div class="plus-mark">+</div></a>
+                                <div class="dropdownContain">
+                                    <div class="dropOut">
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li>Câu hỏi thường gặp</li>
+                                            <a href="../aboutus/aboutus.html">
+                                                <li>Về chúng tôi</li>
+                                            </a>
+                                            <a href="../geolocation/index.html">
+                                                <li>Xem vị trí hiện tại</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </header>
+    </section>
+    <section class="details-container">
+        <h1>Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
+            Bằng - Thác Bản Giốc - Hồ Ba Bể 3N2Đ Bay Vietnam Airlines</h1>
+        <div class="img-and-detail">
+            <div class="wrapper">
+                <input checked type=radio name="slider" id="slide1" />
+                <input type=radio name="slider" id="slide2" />
+                <input type=radio name="slider" id="slide3" />
+                <input type=radio name="slider" id="slide4" />
+                <input type=radio name="slider" id="slide5" />
+
+                <div class="slider-wrapper">
+                    <div class="inner">
+                        <article>
+                            <div class="info bottom-left">
+                                <h3>Chùa Trấn Quốc</h3>
+                            </div>
+                            <img src="https://sayhi.vn/blog/wp-content/uploads/2019/07/dia-diem-du-lich-ha-noi-3.jpg" />
+                        </article>
+
+                        <article>
+                            <div class="info bottom-left">
+                                <h3>Rừng thông Yên Minh</h3>
+                            </div>
+                            <img src="https://toidi.net/wp-content/uploads/2016/09/rung-thong-yen-minh.jpg" />
+                        </article>
+
+                        <article>
+                            <div class="info bottom-left">
+                                <h3>Thác Bản Giốc</h3>
+                            </div>
+                            <img
+                                src="https://i-dulich.vnecdn.net/2019/10/04/tha-c-ba-n-gio-c-vnexpress-5-1570193128_680x0.jpg" />
+                        </article>
+
+                        <article>
+                            <div class="info bottom-left">
+                                <h3>Hồ Ba Bể</h3>
+                            </div>
+                            <img src="https://image.bnews.vn/MediaUpload/Org/2016/11/06/195225_ho-ba-be.jpg" />
+                        </article>
+
+                        <article>
+                            <div class="info bottom-left">
+                                <h3>Hồ Thang Hen</h3>
+                            </div>
+                            <img
+                                src="https://www.kynghidongduong.vn/images/destination/img1/ho-thang-hen-thac-ban-gioc-cao-bang-viet-nam-kynghidongduong-vn-02.jpg" />
+                        </article>
+                    </div>
+                    <!-- .inner -->
+                </div>
+                <!-- .slider-wrapper -->
+
+                <div class="slider-prev-next-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                <!-- .slider-prev-next-control -->
+
+                <div class="slider-dot-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                <!-- .slider-dot-control -->
+            </div>
+            <div class="adjust">
+                <div class="price-table">
+                    <table class="rwd-table">
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa fa-solid fa-qrcode"></i> Mã Tour:</td>
+                            <td class="cat-info tour-code">NDSGN921-932-739285XE-D<button type="button"
+                                    class="btn btn-default btn-copy js-tooltip js-copy" data-toggle="tooltip"
+                                    data-placement="bottom" data-copy="NDSGN921-932-739285XE-D"
+                                    title="Sao chép mã tour">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M17,9H7V7H17M17,13H7V11H17M14,17H7V15H14M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" />
+                                    </svg></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name">
+                                <i class="cat-icon fa-solid fa-file-lines"></i> Loại hình:
+                            </td>
+                            <td class="cat-info tour-cat">Tour HOT</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa fa-solid fa-location-dot"></i> Điểm
+                                đi:
+                            </td>
+                            <td class="cat-info">TP. Hồ Chí Minh</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-location-arrow"></i> Điểm Đến:</td>
+                            <td class="cat-info">Hà Giang, Cao Bằng</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-map-location-dot"></i> Địa danh:</td>
+                            <td class="cat-info">Bảo trì</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-calendar-days"></i> Lịch trình:</td>
+                            <td class="cat-info">5 ngày 4 đêm</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-note-sticky"></i> Ghi chú:</td>
+                            <td class="cat-info">Không có ghi chú gì</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-car-rear"></i> Phương tiện:</td>
+                            <td class="cat-info">Máy bay</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-name"><i class="cat-icon fa-solid fa-tags"></i> Giá từ:</td>
+                            <td class="cat-info tour-price">4.090.000 đ</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="book-container">
+                    <a onclick="togglePopup2(); disableScrolling2();">
+                        <div class="button"><i class="fa-solid fa-cart-shopping"></i> Đặt Ngay</div>
+                    </a>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <a href="../Ha Noi Page/hanoi.html" target="_blank">
+                    <img class="see-more"
+                        src="https://dulichvietnam.com.vn/tour/vnt_upload/weblink/ho-hoan-kiem-min580x220.jpg" alt="">
+                    <div class="centered">Hà Nội</div>
+
+                    <div class="centered-2"><button class="show-all">Xem tất cả tour đến hà nội</button>
+                </a>
+            </div>
+        </div>
+        <div class="tour-details">
+            <div class="parent-container">
+                <ul class="faq">
+                    <li>
+                        <h3 class="question">Nội dung chi tiết
+                            <div class="plus-minus-toggle collapsed" id="auto-expand"></div>
+                        </h3>
+                        <div class="answer" id="auto-expand">
+                            <h3 class="uppercase-text each-title">Điểm nổi bật trong chương trình: </h3>
+                            <div class="content">● Check in vô số các địa danh nổi tiếng của Hà Nội như: Nhà Hát Lớn Hà
+                                Nội, Chùa Trấn
+                                Quốc, Quảng Trường Ba Đình</div>
+                            <div class="content">● Ghé thăm Làng dệt thổ cẩm truyền thống Lùng Tám, nơi sinh sống của
+                                đồng bào H'Mông
+                                với nghề dệt thổ cẩm lâu đời.</div>
+                            <div class="content">● Khám phá, thám hiểm rừng thông Yên Minh, Thác Bản Giốc và Hồ Ba Bể
+                                bạt ngàn sắc xanh
+                            </div>
+                            <div class="content">● Du khách tự do thư giãn tại khu tắm khoáng I-resort, trải nghiệm
+                                tắm bùn khoáng và ngâm suối khoáng nóng.</div>
+                            <h3 class="uppercase-text each-title">Lịch trình chi tiết: </h3>
+                            <div class="day">Ngày 1: HÀ NỘI – PHÚ THỌ – HÀ GIANG (Ăn trưa, chiều)</div>
+                            <div class="day-content">
+                                <p><span class="bold">Sáng:</span> Quý khách có mặt tại ga quốc nội, sân bay Tân Sơn
+                                    Nhất trước giờ bay ít nhất ba tiếng. Đại diện công ty Du Lịch Việt đón và hỗ trợ Quý
+                                    khách làm thủ tục đón chuyến bay đi <span class="bold">Hà Nội</span>.
+                                    Đến sân bay <span class="bold">Nội Bài</span>, Hướng dẫn viên đón Quý khách khởi
+                                    hành
+                                    đến <span class="bold">Hà Giang</span>.</p>
+                            </div>
+                            <div class="day-content">
+                                <p><span class="bold">Trưa:</span> Dừng chân <span class="bold">Phú Thọ</span>, dùng cơm
+                                    trưa. Đoàn tiếp tục khởi
+                                    hành đến <span class="bold">Hà Giang</span> – nơi có những con đường đèo, cứ nối
+                                    nhau
+                                    quanh co uốn lượn, nơi
+                                    có những con người dân tộc chân chất, mặc dù cuộc sống nghèo khổ nhưng trên môi luôn
+                                    nở nụ cười.<br>
+                                    Tham quan Làng văn hóa du lịch sinh thái <span class="bold">Hạ Thành</span>, được
+                                    bao
+                                    quanh bởi những thửa
+                                    ruộng bậc thang xếp nối nhau. Đến với <span class="bold">Hạ Thành</span> là đến với
+                                    những ngôi nhà sàn truyền
+                                    thống nguyên sơ, đến với những câu hát lượn, hát cọi, hát then ngọt ngào, những điệu
+                                    múa dân gian, múa tín ngưỡng, những lễ hội truyền thống huyền bí, tạo cho bạn một
+                                    cảm giác như trở về nơi cội nguồn của dân tộc.
+                                </p>
+                            </div>
+
+                            <div class="day-content">
+                                <p><span class="bold">Tối:</span> Dùng cơm tối. Nghỉ đêm tại <span class="bold">Hà
+                                        Giang</span>.
+                                </p>
+                                <img class="img-content"
+                                    src="https://lh4.googleusercontent.com/-uwdk52lEO_g/U3BUZ8gWS3I/AAAAAAAAAyc/fZ008Vf3bDM/w1000-h628-no/phuot-ha-giang-kinh-nghiem-di-phuot-ha-giang-quoc-phuong.jpg"
+                                    alt="">
+                                <div class="img-subtitle">Hình ảnh làng văn hóa du lịch sinh thái Hạ Thành
+                                </div>
+                            </div>
+                            <div class="day">Ngày 2: HÀ GIANG – Rừng Thông Yên Minh – DINH VUA MÈO (Ăn sáng, trưa,
+                                chiều)
+                            </div>
+                            <div class="day-content">
+                                <p>
+                                    <span class="bold">Sáng:</span> Dùng bữa sáng. Rời thành phố <span class="bold">Hà
+                                        Giang</span>, đường lên
+                                    <span class="bold">Quản Bạ</span> mở ra giữa hai bên
+                                    vách
+                                    núi cao chất ngất, vượt vòng cua khúc khuỷu, đi lên đèo <span class="bold">Pắc
+                                        Sum</span>. Đoàn dừng chân ngắm
+                                    cảnh và chụp ảnh tại dốc <span class="bold">Bắc Sum</span>.
+                                    Lên đến <span class="bold">Cổng Trời Quảng Bạ</span> , Quý khách có thể ngắm nhìn
+                                    <span class="bold">thị trấn Tam Sơn</span> thơ mộng.
+                                    Núi đôi <span class="bold">Quản Bạ</span> hiện lên giữa những núi đá trùng điệp và
+                                    ruộng bậc thang với hình
+                                    dáng,
+                                    thế đứng ngồ ngộ khiến du khách không khỏi ngỡ ngàng trước vẻ đẹp kỳ vĩ của tạo hoá.
+                                    Hai
+                                    trái núi gắn với truyền thuyết “Núi Cô Tiên” rất thi vị.
+                                    Đến thăm Làng dệt thổ cẩm truyền thống Lùng Tám, nơi sinh sống của đồng bào H’Mông
+                                    với
+                                    nghề dệt thổ cẩm lâu đời.
+                                    Đoàn khởi hành đi <span class="bold">Yên Minh</span>.
+                                </p>
+                            </div>
+                            <div class="day-content">
+                                <p><span class="bold">Trưa:</span> Dùng cơm trưa. Ghé thăm <span class="bold">Phố
+                                        Cáo</span>, với những ngôi nhà
+                                    tường màu đất vàng đặc trưng, cổng gỗ nằm trong hàng rào đá – nét đặc trưng của vùng
+                                    cao nguyên đá với bốn dân tộc Mông, Hán, Dao, Pu Péo.
+                                    Từ hướng <span class="bold">Yên Minh</span> lên thị trấn <span class="bold">Đồng
+                                        Vân</span>, đến ngã ba <span class="bold">Phó Bảng</span>, khi đến đỉnh đèo nơi
+                                    ngã ba đi về <span class="bold">Phó Bảng</span>, du khách có thể nhìn thấy toàn cảnh
+                                    Sủng Là phía dưới thung
+                                    lũng. Từ trên con đường vắt vẻo lưng chừng trời nhìn xuống, quý khách được dịp chiêm
+                                    ngưỡng một bức tranh thiên nhiên thanh bình, xinh đẹp.
+                                    Đến Sủng Là thăm nhà cổ H’mong nơi quay bộ phim "Chuyện của Pao". Đoàn đến <span
+                                        class="bold">khu di
+                                        tích nhà vua mèo Vương Chí Sình</span> một dinh thự của bậc đế vương xưa, là một
+                                    công trình
+                                    có kiến trúc đẹp, hiếm có và rất độc đáo của <span class="bold">Hà Giang</span>.</p>
+                            </div>
+                            <div class="day-content">
+                                <p><span class="bold">Tối:</span> Dùng cơm tối. Nghỉ đêm tại <span class="bold">Hà
+                                        Giang</span>.
+                                    <img class="img-content"
+                                        src="https://hanhtrinhdulich.vn/wp-content/uploads/2021/12/Kham-pha-cong-troi-Quan-Ba-Ha-Giang-diem-giao-thoa-giua-dat-troi-noi-dia-dau-To-quoc-2-e1638801163869.jpg"
+                                        alt="">
+                                    <div class="img-subtitle">Hình ảnh Cổng Trời Quản Ba - Hà Giang</div>
+                                    <img src="https://travelgear.vn/blog/wp-content/uploads/2019/03/cong-troi-quan-ba-du-lich-ha-giang.jpg"
+                                        alt="">
+                                    <div class="img-subtitle">Khách du lịch chụp ảnh ở Cổng Trời Quản Ba - Hà Giang
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="day">Ngày 3: ĐỒNG VĂN – LŨNG CÚ – MÈO VẠC – CAO BẰNG (Ăn sáng, trưa, chiều)
+                            </div>
+                            <div class="day-content">
+                                <p><span class="bold">Sáng:</span> Dùng bữa sáng. Quý khách đến tham quan cột cờ
+                                    <span class="bold">Lũng Cú</span>, mảnh đất địa đầu Tổ quốc. Đứng trên đỉnh cột cờ,
+                                    Quý khách sẽ thấy toàn bộ
+                                    <span class="bold">làng văn hóa Lô Lô</span>, phóng xa tầm mắt sẽ thấy những con
+                                    đường nhỏ xíu, uốn lượn quanh
+                                    những cánh đồng lúa, những ngôi nhà nhà lọt thỏm giữa màu xanh của cây cối.
+                                    Đoàn tiếp tục khởi hành đến <span class="bold">Mèo Vạc</span>, trên đường dừng chân
+                                    ngắm
+                                    cảnh đèo <span class="bold">Mã Phì Lèng</span>,
+                                    một trong "tứ đại đỉnh đèo" tại vùng núi phía Bắc Việt Nam, <span class="bold">
+                                        Mã
+                                        Phì Lèng</span> nằm giữa cao
+                                    nguyên đá <span class="bold">Đồng Văn</span> , một bên là <span class="bold">vách
+                                        núi Mã Pí
+                                        Lèng</span>
+                                    cao dựng đứng và một
+                                    bên
+                                    là sông
+                                    <span class="bold">Nho Quế</span> thơ mộng.</p>
+                            </div>
+                            <div class="day-content">
+                                <p>
+                                    <span class="bold">Trưa:</span> Dùng cơm trưa. Đến thị trấn <span class="bold">Mèo
+                                        Vạc</span>, nếu vào đúng
+                                    dịp
+                                    chợ phiên (được mở vào
+                                    chủ nhật hàng tuần), là nơi hội tụ tinh hoa văn hoá của các dân tộc thiểu số vùng
+                                    cao nguyên đá của Hà Giang, chợ phiên Mèo Vạc ẩn chứa trong đó những nét độc đáo khó
+                                    trộn lẫn với bất cứ chợ nào. Ngoài ra, Mèo Vạc còn hấp dẫn du khách nhờ những món
+                                    đặc sản như: thịt bò khô, đậu xi, chè xanh Tát Ngà, rượu ngô Ha Ía và các loại thuốc
+                                    dân gian truyền thống các dân tộc.</p>
+                            </div>
+                            <div class="day-content">
+                                <p>
+                                    <span class="bold">Tối:</span> Đoàn đến <span class="bold">Cao Bằng</span> dùng cơm
+                                    tối. Nghỉ đêm tại <span class="bold">Cao Bằng</span>.
+
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question-2">Phản hồi ý kiến
+                            <div class="plus-minus-toggle collapsed"></div>
+                        </h3>
+                        <div class="answer-2">
+                            <div class="textarea-section">
+                                <textarea name="feedback-text" id="feedback-section" placeholder=" " cols="30"
+                                    rows="10"></textarea>
+                                <h4 class="feedback-textarea">Ý kiến của bạn</h4>
+                            </div>
+                            <form action="javascript:void(0)" onsubmit="togglePopup2(); disableScrolling2();">
+                                <div class="group">
+                                    <input type="text" class="feedback-text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Name</label>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" class="feedback-text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Email</label>
+                                </div>
+
+                                <div class="rate">
+                                    <h4 class="block">Bạn đánh giá chúng tôi mấy sao?</h4>
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                                <button class="magic-button">
+                                    <span class="magic-button__text">Gửi đánh giá</span>
+                                    <span class="magic-button__container">
+                                        <span class="magic-button__right-side"></span>
+                                        <span class="magic-button__bottom"></span>
+                                        <span class="magic-button__corners"></span>
+                                        <span class="magic-button__focus-thing"></span>
+                                        <span class="magic-button__text">Gửi đánh giá</span>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='scrolltop'>
+            <div class='scroll'><i class="fa fa-4x fa-angle-up"></i></div>
+        </div>
+        <div class="fixed-booking">
+            <div class="booking-popup">
+                <div class="tour-name">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao Bằng - Thác Bản Giốc - Hồ Ba Bể</div>
+                <div class="tour-price align-left">Giá từ: 4.090.000 đ<span class="old-price">4.290.000đ</span></div>
+                <a onclick="togglePopup2(); disableScrolling2();">
+                    <div class="button"><i class="fa-solid fa-cart-shopping"></i> Đặt Ngay</div>
+                </a>
+                <a href="tel:123-456-7890">
+                    <div class="button2"><i class="fa-solid fa-phone"></i> Liên Hẹ</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/copy-to-clipboard.js"></script>
+    <script src="js/expand.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="js/appear-on-scroll.js"></script>
+    <script src="../js/booking-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/change-title.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/JavaScript">
+        $(function() {              
+           // Bootstrap DateTimePicker v4
+           $('#datepicker').datetimepicker({
+                 format: 'DD/MM/YYYY'
+           });
+        }); 
+  </script>
+</body>
+<footer class="footer">
+    <div class="footer-addr">
+        <img src="../img/removed-bg-pleasant-tours.png" class="footer-logo">
+        <h2>Liên hệ</h2>
+        <address>
+            8, Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội<br>
+            <a class="footer-btn" href="mailto:khoitdth2107024@fpt.edu.vn">Liên hệ chúng tôi qua Email</a>
+        </address>
+    </div>
+    <ul class="footer-nav">
+        <li class="nav-item">
+            <h2 class="nav-title">Trang chủ</h2>
+
+            <ul class="nav-ul">
+                <li>
+                    <a class="facebook-footer" href="https://www.facebook.com/aptech.fpt" target="_blank">Facebook</a>
+                </li>
+
+                <li>
+                    <a class="zalo-footer" href="javascript:void(0)">Zalo</a>
+                </li>
+
+                <li>
+                    <a class="instagram-footer" href="https://www.instagram.com/aptechvn.official/"
+                        target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-item-extra">
+            <h2 class="nav-title">Giới thiệu về Pleasant Tours</h2>
+
+            <ul class="nav-ul nav-ul-extra">
+                <li>
+                    <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Báo chí</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Tài nguyên và chính sách</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Gửi hỗ trợ</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Tin cậy & An toàn</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <h2 class="nav-title">Thông tin</h2>
+
+            <ul class="foot-ul-2 nav-ul">
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Chính sách về quyền riêng tư</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Điều khoản sử dụng</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Cách thức hoạt động của trang web</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="legal">
+        <p>&copy; 2022 Pleasant Tours. All rights reserved.</p>
+        <div class="legal-links">
+            <span><img class="footer-img" src="https://aptech.fpt.edu.vn/wp-content/uploads/2020/11/logo.png"
+                    alt=""></span>
+        </div>
+    </div>
+</footer>
+
+</html>

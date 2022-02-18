@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@300;400&family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Oswald:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+.tour-details {
+    width: 773px;
+    text-align: left;
+}
+
+.details-container {
+    font-family: "roboto", sans-serif;
+
+}
+
+/* Expand CSS */
+
+.parent-container {
+    padding: 0 20px 0 20px;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.faq {
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.faq li {
+    border-bottom: 2px solid #d827277a;
+    margin-bottom: 15px;
+}
+
+.faq li.active .answer {
+    max-height: 5000px;
+    padding-bottom: 25px;
+    transition: max-height 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+}
+
+.faq li.active .question {
+    color: #d82727;
+    transition: color 0.5s ease-in-out;
+    opacity: 0.7;
+}
+
+.faq .answer {
+    color: #090909;
+    font-family: serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+}
+
+.faq li.active .answer-2 {
+    max-height: 1000px;
+    padding-bottom: 25px;
+    transition: max-height 0.5s ease-in-out, padding-bottom 0.45s ease-in-out;
+}
+
+.faq li.active .question-2 {
+    color: #d82727;
+    transition: color 0.5s ease-in-out;
+    opacity: 0.7;
+}
+
+.faq .answer-2 {
+    color: #090909;
+    font-family: serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding-bottom 0.45s ease-in-out;
+}
+
+.faq .plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    left: -40px;
+    top: 50%;
+    z-index: 2;
+}
+
+.faq .plus-minus-toggle:before,
+.faq .plus-minus-toggle:after {
+    background: #d82727;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    transition: transform 500ms ease-in-out;
+}
+
+.faq .plus-minus-toggle:after {
+    transform-origin: center;
+}
+
+.faq .plus-minus-toggle.collapsed:after {
+    transform: rotate(90deg);
+}
+
+.faq .plus-minus-toggle.collapsed:before {
+    transform: rotate(180deg);
+}
+
+.faq .question {
+    color: #d82727;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: color 0.5s ease-in-out;
+}
+
+.faq .question-2 {
+    color: #d82727;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: color 0.5s ease-in-out;
+}
+
+@media screen and (max-width:767px) {
+    .faq .question {
+        font-size: 18px;
+    }
+}
+
+/* Expand CSS */
+
+.uppercase-text {
+    text-transform: uppercase;
+    font-family: "roboto", sans-serif;
+    background: yellow;
+    width: fit-content;
+    padding: 3px 3px;
+}
+
+.each-title {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.content {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+    color: #2D4271;
+}
+
+.day {
+    color: #3366FF;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.bold {
+    font-weight: 600;
+    color: #2D4271;
+}
+
+
+.day-content {
+    margin-top: 30px;
+    color: #2D4271;
+}
+
+.img-subtitle {
+    text-align: center;
+    vertical-align: bottom;
+    color: #36579e;
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* Feedback */
+.answer-2 form {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.textarea-section {
+    position: relative;
+    margin-top: 50px;
+}
+
+.answer-2 textarea {
+    border: 1px solid #36579e;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 340px 10px 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    color: #36579e;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.answer-2 textarea:focus {
+    border: 1px solid #FF6F91;
+}
+
+.answer-2 textarea:focus~.feedback-textarea {
+    color: #FF6F91;
+}
+
+.answer-2 textarea:not(:placeholder-shown)~.feedback-textarea {
+    color: #FF6F91;
+}
+
+.feedback-textarea {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    color: #36579e;
+    font-size: 21px;
+    font-weight: 500;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.group {
+    position: relative;
+    margin-top: 35px;
+}
+
+.feedback-text {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #36579e;
+    color: #36579e;
+}
+
+.feedback-text:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+.label {
+    color: #36579e;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.feedback-text:focus~label,
+.feedback-text:valid~label {
+    top: -20px;
+    font-size: 15px;
+    color: #FF6F91;
+}
+
+/* BOTTOM BARS ================================= */
+
+
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #FF6F91;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+
+
+/* Feedback */

@@ -168,7 +168,7 @@ nav ul li.drop {
 
 .dropOut {
   display: block;
-  width: 210px;
+  width: 220px;
   background: white;
   float: left;
   position: relative;
@@ -198,7 +198,7 @@ nav ul li.drop {
   display: block;
   text-align: left;
   float: left;
-  width: 180px;
+  width: 195px;
   padding: 12px 0 10px 15px;
   margin: 0px 10px;
   color: #777;
@@ -374,7 +374,7 @@ ul li:hover .dropOut-2 {
 }
 
 .btn-contact-inner {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 28px;
   padding: 0 10px;
   border: 1px solid #20abe2;
