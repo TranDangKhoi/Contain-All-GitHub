@@ -10,4 +10,5 @@ $('.faq li .question-2').click(function () {
 
 $(document).ready(function () {
     $("#auto-expand").click();
+    $("#auto-expand-2").click();
 });

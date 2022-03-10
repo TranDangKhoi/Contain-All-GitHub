@@ -21,12 +21,10 @@
     <link rel="stylesheet" href="../css/icon.css" />
     <link rel="stylesheet" href="../css/scroll-to-top.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/hanoi-p.css">
-    <link rel="stylesheet" href="css/hanoi-product.css">
     <link rel="stylesheet" href="../css/why-choose-us.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
     <link rel="stylesheet" href="../css/find-tour.css">
+    <link rel="stylesheet" href="css/book-tour.css">
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/table.css">
@@ -34,6 +32,12 @@
     <link rel="stylesheet" href="css/float-book.css">
     <link rel="stylesheet" href="css/magic-button.css">
     <link rel="stylesheet" href="css/star-rating.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/floating-icons.css">
+    <link rel="stylesheet" href="css/ticket.css">
+    <link rel="stylesheet" href="css/dancing-guy.css">
+    <link rel="stylesheet" href="css/point-left.css">
+    <link rel="stylesheet" href="css/bill.css">
     <title>Du lịch Miền Bắc Hà Nội - Hà Giang - Cao Bằng - Thác Bản Giốc - Hồ Ba Bể 3N2Đ Bay Vietnam Airlines</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
@@ -44,13 +48,292 @@
 <body onload="javascript: realtimeClock();" id="body">
     <script src="../js/clock.js"></script>
     <section class="header-section">
-        <div class="second-popup" id="popup-2">
-            <div class="overlay-2"></div>
-            <div class="content-2">
-                <div class="close-btn" onclick="togglePopup2(); enableScrolling();">&times</div>
-                <h1>Cảm ơn đã sử dụng dịch vụ của Pleasant Tours!</h1>
-                <ion-icon class="checkbox-popup" name="checkmark-circle-outline"></ion-icon>
-                <h3 class="align-next-icon">Done</h3>
+        <div class="fourth-popup" id="popup-4">
+            <div class="overlay-4"></div>
+            <div class="content-4">
+                <div class="close-btn" id="auto-close" onclick="togglePopup4(); enableScrolling2();">&times</div>
+                <div class="booking-form-section">
+                    <div class="booking-left divide-section">
+                        <form class="booking-form" action="javascript:void(0)">
+                            <!--  General -->
+                            <div class="form-group">
+                                <h2 class="heading">Thông tin liên hệ</h2>
+                                <div class="controls">
+                                    <input type="text" id="name" class="floatLabel" autocomplete="off" name="name"
+                                        required>
+                                    <label for="name">Họ và tên</label>
+                                </div>
+                                <div class="controls">
+                                    <input type="text" id="email" pattern=".+@gmail\.com" class="floatLabel"
+                                        autocomplete="off" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="grid">
+                                    <div class="col-2-3">
+                                        <div class="controls">
+                                            <input type="text" id="street" autocomplete="off" class="floatLabel"
+                                                name="street" required>
+                                            <label for="street">Địa chỉ</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1-3">
+                                        <div class="controls">
+                                            <input type="tel" id="street-number" autocomplete="off" class="floatLabel"
+                                                name="street-number">
+                                            <label for="street-number">Số điện thoại</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="heading">Loại vé</h2>
+                            <div class="ticket-wrapper">
+                                <div class="container">
+                                    <div class="rows">
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="ticket-card">
+                                                <div class="cover">
+                                                    <img src="https://s28.postimg.org/p916fev0t/week.jpg" alt="" />
+                                                </div>
+                                                <div class="body">
+
+                                                    <div class="artist">
+                                                        <h6 class="ticket-info">Tour Hot 2022
+                                                        </h6>
+                                                        <h4 class="name">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
+                                                            Bằng - Thác Bản Giốc - Hồ Ba Bể</h4>
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="from">Giá từ</div>
+                                                        <div class="value">
+                                                            <b>$</b>4.090.000đ
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clearfix"></div>
+                                                    <div class="ticket-info">
+                                                        <p class="location">
+                                                            <i class="fa-solid fa-heart"></i> 2.2K Quan tâm
+                                                        </p>
+                                                        <p class="date">
+                                                            <i class="fa fa-calendar"></i> 2022, 1 Tháng 3
+                                                        </p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="collapse">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Phổ Thông<br>
+                                                                    <small>Còn 25 vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">4.090.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input" id="phothong-1"><span
+                                                                    class="readonly">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Phổ Thông Đặc Biệt<br>
+                                                                    <small>Còn 15 vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">4.790.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="dacbiet-1">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Thương Gia<br>
+                                                                    <small>Còn 62 vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">8.790.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="thuonggia-1">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Nhất<br>
+                                                                    <small>Còn 6 vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">11.590.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="nhat-1">Vé</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ticket-footer">
+                                                    <button href="javascript:void(0)" class="btn toggle-tickets">Hiện
+                                                        chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-6 ticket-2">
+                                            <div class="ticket-card">
+                                                <div class="cover">
+                                                    <img src="https://s28.postimg.org/p916fev0t/week.jpg" alt="" />
+                                                </div>
+                                                <div class="body">
+
+                                                    <div class="artist">
+                                                        <h6 class="ticket-info">Tour Hot 2022</h6>
+                                                        <h4 class="name">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
+                                                            Bằng - Thác Bản Giốc - Hồ Ba Bể</h4>
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="from">Giá Từ</div>
+                                                        <div class="value">
+                                                            4.190.000đ
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clearfix"></div>
+                                                    <div class="ticket-info">
+                                                        <p class="location">
+                                                            <i class="fa-solid fa-heart"></i> 2.2K Quan Tâm
+                                                        </p>
+                                                        <p class="date">
+                                                            <i class="fa fa-calendar"></i> 2022, 6 Tháng 3
+                                                        </p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="collapse">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Phổ thông<br>
+                                                                    <small>Còn 62 Vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">4.190.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="phothong-2">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Phổ Thông Đặc Biệt<br>
+                                                                    <small>Còn 64 Vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">6.490.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="dacbiet-2">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Thương Gia<br>
+                                                                    <small>Còn 100 Vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">11.190.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="thuonggia-2">Vé</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ticket">
+                                                                <h5>Hạng Nhất<br>
+                                                                    <small>Còn 100 vé</small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="price">
+                                                                <div class="value">15.590.000đ</div>
+                                                            </div>
+                                                            <a href="#" class="btn btn-sm btn-buy"><input type="number"
+                                                                    value="0" min="0" max="999" oninput="javascript: if
+                                                                    (this.value.length > this.maxLength) this.value =
+                                                                    this.value.slice(0, this.maxLength);" maxlength="3"
+                                                                    class="short-input"><span class="readonly"
+                                                                    id="nhat-2">Vé</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ticket-footer">
+                                                    <button href="javascript:void(0)" class="btn toggle-tickets">Hiện
+                                                        chi tiết
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                    <div class="booking-right divide-section">
+                        <div class="play-music">
+                            <div id="music-animation" class="music-animation">
+                                <span class="bar bar1"></span>
+                                <span class="bar bar2"></span>
+                                <span class="bar bar3"></span>
+                                <span class="bar bar4"></span>
+                                <span class="bar bar5"></span>
+                            </div>
+                            <div class="music-toggle"><a onClick="togglePlay()" id="toggle"
+                                    data-text-swap="Tắt nhạc">Bật nhạc</a></div>
+                        </div>
+                        <audio id="music" loop="loop"
+                            src="https://web.opendrive.com/api/v1/download/file.json/OV84MDUyNTM1NF9aSXB6Sw?inline=1"></audio>
+                        <div class="point">
+                            <img src="../img/point-left.png" alt="">
+                            <h3>Bạn hãy điền đầy đủ thông tin vào form thông tin liên hệ nhé!
+                            </h3>
+                            <a onclick="togglePopup5(); disableScrolling2(); calculateCost();">
+                                <div class="button center-button"><i class="fa-solid fa-cart-shopping"></i> Đặt Ngay
+                                </div>
+                            </a>
+
+                            <h2 class="thanks">Thanks for supporting us</h2>
+                        </div>
+
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="popup" id="popup-1">
@@ -109,6 +392,85 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="fifth-popup" id="popup-5">
+            <div class="overlay-5"></div>
+            <div class="content-5">
+                <div class="close-btn" onclick="togglePopup5(); enableScrolling();">&times</div>
+                <div class="receipt-container">
+                    <div class="receipt-images">
+                        <img src="../img/pleasant-tour-2.png" class="receipt-logo" alt="Pleasant Tour Logo">
+                        <h2 class="success">Đặt tour thành công!</h2>
+                    </div>
+                    <div class="in-progress">Đơn hàng của bạn đang được xử lý...</div>
+                    <div class="tour-id">
+                        <div class="id-title">Mã số đơn hàng của bạn là:</div>
+                        <div class="below-id">DLVN2022020321</div>
+                    </div>
+
+                    <div class="contact-now">Nhân viên của chúng tôi sẽ liên hệ với Quý khách trong thời gian sớm
+                        nhất!
+                    </div>
+                    <div class="contact-now-2">Nếu có thắc mắc, Quý khách vui lòng liên hệ qua số hotline theo văn
+                        phòng <a href="tel:123-456-7890"><span>tại đây</span></a> </div>
+                    <div class="receipt-thanks">Cảm ơn đã ủng hộ chúng tôi! &#128591;</div>
+
+                    <!-- <div class="row-2 expanded">
+                            <main class="columns">
+                                <div class="inner-container">
+                                    <section class="row-2">
+                                        <div class="large invoice-container">
+                                            <table class="invoice">
+                                                <tr class="header">
+                                                    <td class="">
+                                                <tr class="details">
+                                                    <td colspan="2">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="desc">Chi tiết sản phẩm</th>
+                                                                    <th class="id">Mã Tour</th>
+                                                                    <th class="qty">Số lượng</th>
+                                                                    <th class="amt">Giá tiền</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="items-add">
+                                                                <tr class="item">
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr class="totals">
+                                                    <td></td>
+                                                    <td>
+                                                        <table>
+                                                            <tr class="fees">
+                                                                <td class="num">Thuế (5%)</td>
+                                                                <td class="num" id="receipt-tax">0 VND</td>
+                                                            </tr>
+                                                            <tr class="fees">
+                                                                <td class="num">Mã giảm giá</td>
+                                                                <td class="num">0 VND</td>
+                                                            </tr>
+                                                            <tr class="total">
+                                                                <td>Total</td>
+                                                                <td id="total-price">0 VND</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                            </main>
+                        </div> -->
+
+                </div>
+
             </div>
         </div>
         <header>
@@ -177,7 +539,9 @@
                                     <div class="dropOut">
                                         <div class="triangle"></div>
                                         <ul>
-                                            <li>Câu hỏi thường gặp</li>
+                                            <a href="../FAQ/faq.html" target="_blank">
+                                                <li>Câu hỏi thường gặp</li>
+                                            </a>
                                             <a href="../aboutus/aboutus.html">
                                                 <li>Về chúng tôi</li>
                                             </a>
@@ -198,7 +562,7 @@
     </section>
     <section class="details-container">
         <h1>Du lịch Miền Bắc Hà Nội - Hà Giang - Cao
-            Bằng - Thác Bản Giốc - Hồ Ba Bể 3N2Đ Bay Vietnam Airlines</h1>
+            Bằng - Thác Bản Giốc - Hồ Ba Bể 5N4Đ Bay Vietnam Airlines</h1>
         <div class="img-and-detail">
             <div class="wrapper">
                 <input checked type=radio name="slider" id="slide1" />
@@ -324,7 +688,7 @@
                     </table>
                 </div>
                 <div class="book-container">
-                    <a onclick="togglePopup2(); disableScrolling2();">
+                    <a onclick="togglePopup4(); disableScrolling2();">
                         <div class="button"><i class="fa-solid fa-cart-shopping"></i> Đặt Ngay</div>
                     </a>
                 </div>
@@ -500,31 +864,31 @@
                     </li>
                     <li>
                         <h3 class="question-2">Phản hồi ý kiến
-                            <div class="plus-minus-toggle collapsed"></div>
+                            <div class="plus-minus-toggle collapsed" id="auto-expand-2"></div>
                         </h3>
-                        <div class="answer-2">
+                        <div class="answer-2" id="auto-expand-2">
                             <div class="textarea-section">
                                 <textarea name="feedback-text" id="feedback-section" placeholder=" " cols="30"
                                     rows="10"></textarea>
                                 <h4 class="feedback-textarea">Ý kiến của bạn</h4>
                             </div>
-                            <form action="javascript:void(0)" onsubmit="togglePopup2(); disableScrolling2();">
+                            <form action="javascript: void(0)">
                                 <div class="group">
                                     <input type="text" class="feedback-text" required>
                                     <span class="highlight"></span>
-                                    <span class="bar"></span>
+                                    <span class="input-bar"></span>
                                     <label class="label">Name</label>
                                 </div>
 
                                 <div class="group">
                                     <input type="text" class="feedback-text" required>
                                     <span class="highlight"></span>
-                                    <span class="bar"></span>
+                                    <span class="input-bar"></span>
                                     <label class="label">Email</label>
                                 </div>
 
                                 <div class="rate">
-                                    <h4 class="block">Bạn đánh giá chúng tôi mấy sao?</h4>
+                                    <h4 class="block">Bạn đánh giá tour này mấy sao?</h4>
                                     <input type="radio" id="star5" name="rate" value="5" />
                                     <label for="star5" title="text">5 stars</label>
                                     <input type="radio" id="star4" name="rate" value="4" />
@@ -559,7 +923,7 @@
             <div class="booking-popup">
                 <div class="tour-name">Du lịch Miền Bắc Hà Nội - Hà Giang - Cao Bằng - Thác Bản Giốc - Hồ Ba Bể</div>
                 <div class="tour-price align-left">Giá từ: 4.090.000 đ<span class="old-price">4.290.000đ</span></div>
-                <a onclick="togglePopup2(); disableScrolling2();">
+                <a onclick="togglePopup4(); disableScrolling2();">
                     <div class="button"><i class="fa-solid fa-cart-shopping"></i> Đặt Ngay</div>
                 </a>
                 <a href="tel:123-456-7890">
@@ -568,19 +932,246 @@
             </div>
         </div>
     </section>
+    <section class="blogs">
+        <h2>Các bài viết liên quan</h2>
+        <div class="row">
+            <div class="example-2 card">
+                <div class="blog-wrapper img-7">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>4.2T</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>69K</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Trần Đăng Khôi</span>
+                            <h1 class="title"><a href="#">23 Món Ngon Hà Nội Vừa Nghe Tên Đã Thèm
+                                </a></h1>
+                            <p class="text">Ẩm thực Hà Nội đã được lưu truyền và tồn tại qua nhiều thế kỷ, tạo nên hương
+                                vị đặc trưng. Nếu có dịp du lịch Hà Nội, đừng quên thưởng
+                                thức 23 món ngon được tổng hợp trong bài viết này nhé!</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-2 card">
+                <div class="blog-wrapper img-1">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>4.2T</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>69K</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Trần Đăng Khôi</span>
+                            <h1 class="title"><a href="#">Giới thiệu về Hà Nội – Vùng đất nghìn năm văn hiến
+                                </a></h1>
+                            <p class="text">Với bài viết về Hà Nội này, chắc chắn bạn sẽ yêu ngay những thứ
+                                mà nó có, từ văn hóa, phong tục tập quán, con người, nhịp sống cho đến cảnh vật và cả
+                                nền ẩm
+                                thực hấp dẫn mà không nơi nào có được.</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-2 card">
+                <div class="blog-wrapper img-2">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>180</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>73</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Trần Đăng Khôi</span>
+                            <h1 class="title"><a href="#">Phố Tạ Hiện - Con phố “không ngủ” giữa lòng Hà Nội</a></h1>
+                            <p class="text">Không trang hoàng cầu kì, xa hoa, lộng lẫy như những con phố đêm khác, không
+                                tráng lệ, uy nghiêm như nhiều địa điểm du lịch khác,
+                                Tạ Hiện có phần cổ kính, mộc mạc, hơi “bụi” nhưng hấp dẫn lòng người đến lạ.</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-2 card">
+                <div class="blog-wrapper img-3">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>910</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>670</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Trần Đăng Khôi</span>
+                            <h1 class="title"><a href="#">Phố đi bộ Hà Nội: Điểm vui chơi lý tưởng dịp cuối tuần</a>
+                            </h1>
+                            <p class="text">Đến thời điểm hiện tại, phố đi bộ Hà Nội đã và đang dần trở
+                                thành một trong những điểm nhấn của thủ đô, là nơi để mọi người hẹn hò, vui
+                                chơi, và chậm lại giữa những con đường hối hả đông đúc.</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="example-2 card">
+                <div class="blog-wrapper img-4">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>1.2T</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>34K</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Johny Sins</span>
+                            <h1 class="title"><a href="#">Cảm nhận về Hà Nội – Những cảm xúc không thể nói lên lời
+                                </a></h1>
+                            <p class="text">Hà Nội cứ thế đi vào lòng người, chẳng có gì quá đặc biệt nhưng mọi thứ
+                                thuộc về Hà Nội lại gây thương nhớ cho mỗi người, nỗi nhớ dai dẳng không thể bỏ qua.
+                                Thật khó có ngòi bút nào có thể diễn tả được hết cái đặc sắc của Hà Nội.</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-2 card">
+                <div class="blog-wrapper img-5">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>4.9K</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>3K</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Hoang Ha</span>
+                            <h1 class="title"><a href="#">Cao Bằng, vẻ đẹp một vùng non nước</a></h1>
+                            <p class="text">Là một tỉnh miền núi nơi địa đầu Tổ quốc, Cao Bằng không có những công trình
+                                kiến trúc hoành tráng, không có những khu du lịch được đầu tư lớn nhưng phong cảnh núi
+                                rừng với thiên nhiên hùng vĩ nơi đây đã níu chân biết bao du khách!</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-2 card">
+                <div class="blog-wrapper img-6">
+                    <div class="header">
+                        <div class="date">
+                            <span class="year">2022,</span>
+                            <span class="day-blog">20</span>
+                            <span class="month">Tháng 2</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li>
+                                <a href="#" class="blog-icon fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" class="blog-icon fa fa-heart-o"><span>18</span></a></li>
+                            <li><a href="#" class="blog-icon fa fa-comment-o"><span>3</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <div class="inner-content">
+                            <span class="author">Viết bởi Trần Đăng Khôi</span>
+                            <h1 class="title"><a href="#">Hà Giang - Tấm hình của sự nhung nhớ</a>
+                            </h1>
+                            <p class="text">Hơn một năm trôi qua nhưng mỗi lần nhìn lại tấm hình tôi chụp đứa bé gái ở
+                                Hà Giang năm ngoái, tôi
+                                lại bồi hồi buồn. Tôi vẫn chưa quên nó, vẫn băn khoăn một ngày nào phải trở lại tìm nó
+                                trên núi Hà Giang.</p>
+                            <a href="#" class="button-blog">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fabs">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fab green"
+            tooltip="Liên hệ qua SMS"><i class="fa-solid fa-comment-sms"></i></a>
 
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fab red"
+            tooltip="Liên hệ qua Gmail"><i class="fa-solid fa-envelope"></i></i></a>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fab light-blue"
+            tooltip="Liên hệ qua Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fab indigo"
+            tooltip="Xem các ưu đãi trên Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <script src="price-calculator.js"></script>
     <script src="js/copy-to-clipboard.js"></script>
     <script src="js/expand.js"></script>
     <script src="../js/scroll-to-top.js"></script>
     <script src="../js/contact.js"></script>
     <script src="js/appear-on-scroll.js"></script>
     <script src="../js/booking-popup.js"></script>
+    <script src="js/booking-form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../js/change-title.js"></script>
+    <script src="js/ticket.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
     </script>
+    <script src="js/music.js"></script>
     <script type="text/JavaScript">
         $(function() {              
            // Bootstrap DateTimePicker v4

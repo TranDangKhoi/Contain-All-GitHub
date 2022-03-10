@@ -1,0 +1,260 @@
+.fifth-popup .overlay-5 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;
+}
+
+.fifth-popup .content-5 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 700px;
+    height: 500px;
+    z-index: 3;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fifth-popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fifth-popup.active4 .overlay-5 {
+    display: block;
+}
+
+.fifth-popup.active4 .content-5 {
+    transition: all 500ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.fifth-popup {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.contact-now {
+    font-size: 20px;
+    text-align: center;
+    color: #3d61af;
+}
+
+.contact-now-2 {
+    font-size: 20px;
+    text-align: center;
+    color: #3d61af;
+}
+
+.contact-now-2 span {
+    color: #EF6EA0;
+    font-size: 20px;
+}
+
+.contact-now-2 span:hover {
+    color: black;
+}
+
+.success {
+    font-size: 27px;
+    color: #36579e;
+}
+
+.receipt-thanks {
+    color: #3d61af;
+    font-size: 24px;
+}
+
+.in-progress {
+    background: #344A71;
+    padding: 7px 14px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.tour-id {
+    background: #D82727;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    padding: 6px 12px;
+}
+
+.id-title {
+    font-size: 17px;
+}
+
+.below-id {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Bill Details */
+
+.receipt-images {
+    text-align: center;
+}
+
+.receipt-logo {
+    width: 140px;
+    height: 130px;
+}
+
+
+.receipt-thanks {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+main .inner-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+table.invoice {
+    background: #fff;
+}
+
+table.invoice .num {
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+}
+
+table.invoice tr,
+table.invoice td {
+    background: #fff;
+    text-align: left;
+    font-weight: 400;
+    color: #322d28;
+}
+
+table.invoice tr.header td img {
+    max-width: 300px;
+}
+
+table.invoice tr.header td h2 {
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    color: #1779ba;
+}
+
+table.invoice tr.intro td:nth-child(2) {
+    text-align: right;
+}
+
+table.invoice tr.details>td {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+
+table.invoice tr.details td.id,
+table.invoice tr.details td.qty,
+table.invoice tr.details th.id,
+table.invoice tr.details th.qty {
+    text-align: center;
+}
+
+table.invoice tr.details td:last-child,
+table.invoice tr.details th:last-child {
+    text-align: right;
+}
+
+table.invoice tr.details table thead,
+table.invoice tr.details table tbody {
+    position: relative;
+}
+
+table.invoice tr.details table thead:after,
+table.invoice tr.details table tbody:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: -1px;
+    background: #c8c3be;
+}
+
+table.invoice tr.totals td {
+    padding-top: 0;
+}
+
+table.invoice tr.totals table tr td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+table.invoice tr.totals table tr td:nth-child(1) {
+    font-weight: 500;
+}
+
+table.invoice tr.totals table tr td:nth-child(2) {
+    text-align: right;
+    font-weight: 200;
+}
+
+table.invoice tr.totals table tr:nth-last-child(2) td {
+    padding-bottom: 0.5em;
+}
+
+table.invoice tr.totals table tr:nth-last-child(2) td:last-child {
+    position: relative;
+}
+
+table.invoice tr.totals table tr:nth-last-child(2) td:last-child:after {
+    content: "";
+    height: 4px;
+    width: 110%;
+    border-top: 1px solid #1779ba;
+    border-bottom: 1px solid #1779ba;
+    position: relative;
+    right: 0;
+    bottom: -0.575rem;
+    display: block;
+}
+
+table.invoice tr.totals table tr.total td {
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    font-weight: 700;
+}
+
+table.invoice tr.totals table tr.total td:last-child {
+    font-weight: 700;
+}
+
+.additional-info h5 {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1779ba;
+}

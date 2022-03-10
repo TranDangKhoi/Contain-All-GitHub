@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    /* top and bottom margins are 0, right and left margins are auto*/
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../img/faq-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 63% 63%;
+    height: 85px;
+    padding-bottom: 600px;
+
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    cursor: pointer;
+    float: left;
+    font-family: 'Lato';
+}
+
+.logo img {
+    width: 130px;
+    margin-top: -20px;
+    margin-left: 100px;
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 25px;
+    position: relative;
+    margin-left: 50px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+* {
+    /* make all element unhightlightable */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

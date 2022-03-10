@@ -1,0 +1,108 @@
+.cards {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px auto;
+    transform: translateX(30px)
+}
+
+.faq-card {
+    background: white;
+    width: 255px;
+    height: 267px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top: 1px solid rgba(50, 50, 93, 0.25);
+}
+
+.faq-icon-adjust {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 100px;
+    color: black;
+    transition: all 150ms ease-in-out;
+    opacity: 0.5;
+}
+
+.faq-icon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-card-bottom {
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    gap: 65px;
+    padding: 5px 15px;
+}
+
+.faq-card-title {
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    width: 120px;
+}
+
+.direct-icon {
+    color: black;
+    font-size: 30px;
+    transform: translate(0, 15px);
+    transition: all 150ms ease-in-out;
+}
+
+.faq-card:hover .direct-icon {
+    transform: translate(25px, 15px);
+}
+
+.faq-card:hover .faq-icon-adjust {
+    opacity: 1;
+    font-size: 115px;
+}
+
+.see-report-button {
+    padding: 30px 100px 30px 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    border-top: 1px solid rgba(50, 50, 93, 0.25);
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.see-report {
+    text-align: center;
+}
+
+
+.size-icon {
+    font-size: 25px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+}
+
+.see-icon {
+    margin-left: 10px;
+    transform: translate(50px, 2px);
+    transition: all 200ms ease-in-out;
+}
+
+.see-report-button:hover .size-icon {
+    opacity: 1;
+}
+
+.see-report-button:hover .see-icon {
+    transform: translate(75px, 2px);
+}

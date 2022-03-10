@@ -1,0 +1,81 @@
+header button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    color: white;
+    position: relative;
+}
+
+header button::before,
+header button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.draw {
+    transition: color 0.1s;
+    text-transform: uppercase;
+}
+
+.draw::before,
+.draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.draw::before {
+    top: 0;
+    left: 0;
+}
+
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+
+.draw:hover {
+    color: #60daaa;
+}
+
+.draw:hover::before,
+.draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.draw:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    transition: width 0.2s ease-out, height 0.25s ease-out 0.2s;
+}
+
+.draw:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    transition: border-color 0s ease-out 0.25s, width 0s ease-out 0.25s, height 0s ease-out 0.5s;
+}
+
+.meet:hover {
+    color: white;
+}
+
+.meet::after {
+    top: 0;
+    left: 0;
+}
+
+.meet:hover::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.meet:hover::after {
+    border-bottom-color: white;
+    border-left-color: white;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}

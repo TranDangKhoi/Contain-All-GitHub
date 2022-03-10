@@ -8,6 +8,10 @@
   -moz-user-select: none;
 }
 
+.border-radius {
+  border-radius: 12px;
+}
+
 .discover-head {
   clear: both;
   position: relative;
@@ -34,7 +38,6 @@
 .discover-card {
   height: 324px;
   width: 216px;
-  background: rgba(0, 0, 0, 0.75);
 }
 
 .discover-para {

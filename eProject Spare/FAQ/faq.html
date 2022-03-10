@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Link IonicIconV5 to website -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5e5aa9c9c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/icon.css" />
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <link rel="stylesheet" href="css/under-header.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/faq-footer.css">
+    <link rel="stylesheet" href="css/fixed-feedback.css">
+    <link rel="stylesheet" href="css/feedback-popup.css">
+    <title>Những câu hỏi thường gặp</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon_io/site.webmanifest" />
+</head>
+
+<body>
+    <div class="third-popup" id="popup-3">
+        <div class="overlay-3"></div>
+        <div class="content-3">
+            <div class="close-btn" onclick="togglePopup3(); enableScrolling2();">&times</div>
+            <h1 class="feedback-ask">Bạn có thể đánh giá cho chúng tôi biết về dịch vụ chăm sóc khách hàng không?</h1>
+            <div class="module module5b animated module5c">
+
+                <div class="smileys">
+                    <div class="smile"><span class="tt">Tệ</span><img
+                            src="http://websurveys2.servmetric.com/imgs/smileys/large/poor/smiley.png" /></div>
+                    <div class="smile"><span class="tt">Khá</span><img
+                            src="http://websurveys2.servmetric.com/imgs/smileys/large/average/smiley.png" /></div>
+                    <div class="smile"><span class="tt">Tốt</span><img
+                            src="http://websurveys2.servmetric.com/imgs/smileys/large/good/smiley.png" /></div>
+                </div>
+                <p>Nhìn chung, trải nghiệm của bạn về Pleasant Tours như thế nào?</p>
+            </div>
+        </div>
+    </div>
+    <a onclick="togglePopup3(); disableScrolling2();">
+        <div class="tab tab1 animated">
+            <p>Phản hồi ý kiến</p>
+            <div class="smileys">
+                <div class="smile"><img src="http://websurveys2.servmetric.com/imgs/smileys/large/poor/smiley.png" />
+                </div>
+                <div class="smile"><img src="http://websurveys2.servmetric.com/imgs/smileys/large/average/smiley.png" />
+                </div>
+                <div class="smile"><img src="http://websurveys2.servmetric.com/imgs/smileys/large/good/smiley.png" />
+                </div>
+            </div>
+        </div>
+    </a>
+    <header>
+        <div class="container">
+            <h1 class="logo unselectable">
+                <img src="../img/pleasant-tour-faq.png" alt="Logo">
+            </h1>
+            <nav>
+                <ul>
+                    <li class="search">
+                        <form class="search-container" action="//www.google.com/search" target="_blank">
+                            <input id="search-box" type="text" class="search-box" name="q" autocomplete="off"
+                                placeholder="Nhập vào đây vấn đề bạn muốn tìm kiếm" />
+                            <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
+                            <input type="submit" id="search-submit" />
+                        </form>
+                    </li>
+                    <li><a href="../design1.html"><button class="draw meet">Liên hệ trực tiếp</button></a></li>
+                    <li><a href="../design1.html"><button class="draw meet">Về trang chủ</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="under-header-section">
+            <h2 class="under-header-title">Trung tâm hỗ trợ khách hàng của Pleasant Tours</h2>
+            <div class="under-header-subtitle">Chúng tôi luôn muốn những trải nghiệm tuyệt vời nhất dành cho khách hàng,
+                nếu bạn có thắc mắc gì hãy xem nội dung các vấn đề ở dưới đây. Nếu không có xin hãy
+                liên hệ trực tiếp với chúng tôi. Trân trọng!</div>
+        </section>
+    </header>
+    <br>
+
+    <section class="faq-container">
+        <div class="cards">
+            <a href="FAQDetails/datve.html">
+                <div class=" faq-card">
+                    <div class="faq-icon">
+                        <ion-icon class="faq-icon-adjust" name="book-outline"></ion-icon>
+                    </div>
+                    <div class="faq-card-bottom">
+                        <div class="faq-card-title">
+                            Hỗ trợ đặt vé
+                        </div>
+                        <div class="faq-direct">
+                            <i class="direct-icon fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="faq-card">
+                <div class="faq-icon">
+                    <i class="faq-icon-adjust fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="faq-card-bottom">
+                    <div class="faq-card-title">
+                        Hỗ trợ liên hệ
+                    </div>
+                    <div class="faq-direct">
+                        <i class="direct-icon fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-icon">
+                    <i class="faq-icon-adjust fa-solid fa-magnifying-glass-location"></i>
+                </div>
+                <div class="faq-card-bottom">
+                    <div class="faq-card-title">
+                        Hỗ trợ tìm kiếm
+                    </div>
+                    <div class="faq-direct">
+                        <i class="direct-icon fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-icon">
+                    <i class="faq-icon-adjust fa-solid fa-crown"></i>
+                </div>
+                <div class="faq-card-bottom">
+                    <div class="faq-card-title">
+                        Quyền lợi VIP
+                    </div>
+                    <div class="faq-direct">
+                        <i class="direct-icon fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="watch-report">
+        <div class="see-report">
+            <button class="see-report-button"><i class="size-icon fa-solid fa-clipboard-list"></i>Theo dõi phiếu hỗ
+                trợ<i class="see-icon fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <script src="js/feedback-popup.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-addr">
+        <img src="../img/removed-bg-pleasant-tours.png" class="footer-logo">
+        <h2>Liên hệ</h2>
+        <address>
+            8, Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội<br>
+            <a class="footer-btn" href="mailto:khoitdth2107024@fpt.edu.vn">Liên hệ chúng tôi qua Email</a>
+        </address>
+    </div>
+    <ul class="footer-nav">
+        <li class="nav-item">
+            <h2 class="nav-title">Trang chủ</h2>
+
+            <ul class="nav-ul">
+                <li>
+                    <a class="facebook-footer" href="https://www.facebook.com/aptech.fpt" target="_blank">Facebook</a>
+                </li>
+
+                <li>
+                    <a class="zalo-footer" href="javascript:void(0)">Zalo</a>
+                </li>
+
+                <li>
+                    <a class="instagram-footer" href="https://www.instagram.com/aptechvn.official/"
+                        target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-item-extra">
+            <h2 class="nav-title">Giới thiệu về Pleasant Tours</h2>
+
+            <ul class="nav-ul nav-ul-extra">
+                <li>
+                    <a class="f-letter" href="../aboutus/aboutus.html">Về chúng tôi</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Báo chí</a>
+                </li>
+
+                <li>
+                    <a class="f-letter" href="javascript:void(0)">Tài nguyên và chính sách</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Gửi hỗ trợ</a>
+                </li>
+
+                <li>
+                    <a class="p-letter" href="javascript:void(0)">Tin cậy & An toàn</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <h2 class="nav-title">Thông tin</h2>
+
+            <ul class="foot-ul-2 nav-ul">
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Chính sách về quyền riêng tư</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Điều khoản sử dụng</a>
+                </li>
+
+                <li>
+                    <a class="t-letter" href="javascript:void(0)">Cách thức hoạt động của trang web</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="legal">
+        <p>&copy; 2022 Pleasant Tours. All rights reserved.</p>
+        <div class="legal-links">
+            <span><img class="footer-img" src="https://aptech.fpt.edu.vn/wp-content/uploads/2020/11/logo.png"
+                    alt=""></span>
+        </div>
+    </div>
+</footer>
+
+</html>

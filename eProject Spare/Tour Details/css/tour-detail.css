@@ -28,7 +28,7 @@
 }
 
 .faq li {
-    border-bottom: 2px solid #d827277a;
+    border-bottom: 1px solid #cccccc;
     margin-bottom: 15px;
 }
 
@@ -287,14 +287,14 @@
 /* BOTTOM BARS ================================= */
 
 
-.bar {
+.input-bar {
     position: relative;
     display: block;
     width: 300px;
 }
 
-.bar:before,
-.bar:after {
+.input-bar:before,
+.input-bar:after {
     content: '';
     height: 2px;
     width: 0;
@@ -306,17 +306,17 @@
     -webkit-transition: 0.2s ease all;
 }
 
-.bar:before {
+.input-bar:before {
     left: 50%;
 }
 
-.bar:after {
+.input-bar:after {
     right: 50%;
 }
 
 /* active state */
-input:focus~.bar:before,
-input:focus~.bar:after {
+input:focus~.input-bar:before,
+input:focus~.input-bar:after {
     width: 50%;
 }
 

@@ -1,0 +1,404 @@
+.smile:hover {
+    cursor: pointer;
+}
+
+a#taskdone {
+    position: fixed;
+    z-index: 12;
+    bottom: 12px;
+    left: 12px;
+    background: #fff;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #1976d2;
+    transition-duration: 150ms;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+a#taskdone:hover {
+    background: #03a9f4;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+a#taskdone:active {
+    background: #ffa000;
+}
+
+.module {
+    max-width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab {
+    z-index: 1;
+}
+
+
+.smileys {
+    display: flex;
+}
+
+.module .smile {
+    width: 33.33333%;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+    transition-duration: 150ms;
+}
+
+.module .smile img {
+    width: 100%;
+}
+
+.module p {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+    opacity: 0.78;
+}
+
+.module .smile:hover {
+    transform: scale(1.15);
+}
+
+
+.tt {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    opacity: 0.0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.smile:hover .tt {
+    opacity: 1.0;
+}
+
+.module5 p,
+.module8 p,
+.module5b p {
+    margin-top: 0;
+}
+
+.module5 .smileys,
+.module8 .smileys,
+.module5b .smileys {
+    margin-top: 1em;
+}
+
+
+.module6 .smile:nth-child(1) img {
+    position: relative;
+    transition-duration: 800ms;
+    opacity: 1.0;
+    bottom: 0px;
+}
+
+.module6 .smile:hover:nth-child(1) img {
+    bottom: 1000px;
+    opacity: 0.0;
+}
+
+
+.module8 p {
+    font-weight: bold;
+}
+
+.module9 {
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.module9 p {
+    font-weight: normal;
+    background: #002649;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.module9 .smile {
+    position: relative;
+    top: 50px;
+}
+
+.module9 .smileys {
+    overflow: hidden;
+}
+
+.module9:hover .smile {
+    top: 0px;
+}
+
+.module7 {
+    padding-top: 24px;
+}
+
+
+
+.module5b .smile:nth-child(1) .tt {
+    position: relative;
+    bottom: 2px;
+    color: #c41230;
+}
+
+.module5b .smile:nth-child(2) .tt {
+    position: relative;
+    bottom: 2px;
+    color: #eb6e1f;
+}
+
+.module5b .smile:nth-child(3) .tt {
+    position: relative;
+    bottom: 2px;
+    color: #008349;
+}
+
+
+.module5b {
+    margin-bottom: 11px;
+}
+
+/*  TABS  */
+
+.tab1 {
+    position: fixed;
+    transform: rotate(90deg);
+    background: white;
+    top: 60%;
+    padding: 6px;
+    width: 220px;
+    right: -90px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.tab1:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.tab p {
+    float: left;
+    margin: 5px;
+}
+
+.tab .smileys {
+    width: 100px;
+    display: flex;
+}
+
+.tab .smileys .smile {
+    width: 33.3333333%;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.tab .smileys .smile img {
+    width: 100%;
+}
+
+
+.tab2 {
+    position: fixed;
+    transform: rotate(90deg);
+    background: #002649;
+    top: 70%;
+    padding: 6px;
+    padding-top: 17px;
+    width: 190px;
+    right: -79px;
+    transition: all 0.15s cubic-bezier(.25, .8, .25, 1);
+    color: #fff;
+
+}
+
+.tab2:hover {
+    right: -74px;
+    cursor: pointer;
+}
+
+.tab3 {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 190px;
+    z-index: 99999;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-sizing: border-box;
+    padding: 6px;
+    padding-bottom: 6px;
+}
+
+.tab3 p {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.tab3:hover {
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+
+.close {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    top: -8px;
+    right: -8px;
+}
+
+
+/**** FLIP FLOP ****/
+.moduleflip {
+    margin-bottom: 12px;
+}
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    margin: 0 auto;
+}
+
+.flip-container p {
+    margin: 0;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 200px;
+    height: 123px;
+}
+
+.flip-container .front {
+    background: #002649;
+    display: flex;
+    align-items: center;
+}
+
+.front .big {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    background: #e5f2ff;
+}
+
+
+body {
+    padding-bottom: 100px;
+}
+
+
+.module8 .smileys,
+.module5c .smileys {
+    margin-top: 0em;
+
+}
+
+.module5c p {
+    font-weight: bold;
+}
+
+.module8 {
+    margin-top: 14px;
+}
+
+
+.module5c {
+    margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+    main .col {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+
+    a#taskdone {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        bottom: auto;
+        left: 0;
+        text-align: center;
+    }
+}

@@ -92,6 +92,14 @@
     color: #999;
 }
 
+.nav-ul a:visited {
+    color: #999;
+}
+
+.nav-ul a:link {
+    color: #999;
+}
+
 .nav-ul-extra {
     column-count: 2;
     column-gap: 1.25em;

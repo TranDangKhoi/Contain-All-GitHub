@@ -1,0 +1,43 @@
+.problems {
+    flex-direction: column;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 50px 394px;
+}
+
+.row-above {
+    display: flex;
+    gap: 150px;
+}
+
+.row-below {
+    display: flex;
+    gap: 150px;
+}
+
+.problems .problem-title {
+    border-left: 4px solid black;
+    padding-left: 5px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+
+.problems ul {
+    margin-left: -40px;
+}
+
+.problems ul li {
+    list-style-type: none;
+    font-size: 16px;
+    color: #707070;
+    padding-top: 8px;
+    width: 300px;
+}
+
+.focus {
+    margin-top: -100px;
+}
