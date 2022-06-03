@@ -1,0 +1,35 @@
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row2-header {
+  color: #EB6449;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.row2-header--uppercase {
+  text-transform: uppercase;
+}
+.row2-category, .row2-education {
+  width: calc(50% - 2rem);
+}
+.row2-category-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row2-category-item {
+  color: #918b82;
+  font-size: 25px;
+  margin-bottom: 2.5rem;
+}
+.row2-category-left {
+  width: 75%;
+}
+.row2-category-right {
+  width: 25%;
+}
+
+/*# sourceMappingURL=skills.css.map */

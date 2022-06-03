@@ -1,0 +1,125 @@
+$primary-color:#EB6449;
+$secondary-color: #918b82;
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin maxWidth($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+
+    &-header {
+        color: $primary-color;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &-name {
+        color: $secondary-color;
+        font-size: 25px;
+    }
+
+    &-content,
+    &-info {
+        width: calc(50% - 2rem);
+    }
+
+    &-info {
+        &::before {
+            content: "";
+            position: absolute;
+            @include size(1px, 20rem);
+            top: 2rem;
+            left: 54%;
+            transform: translateX(-50%);
+            background: rgba($color: $primary-color, $alpha: 0.5);
+
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    &-rate {
+        &-container {
+            position: relative;
+            left: -1rem;
+        }
+
+        &-point {
+            display: inline-block;
+            position: relative;
+            transform: translateY(0.25rem);
+            @include size(1.2rem);
+            border-radius: 50%;
+            border: 2px solid $primary-color;
+            background-color: $primary-color;
+
+            &:not(:first-child) {
+                margin-left: 0.8rem;
+            }
+
+            &--trans {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+            margin-top: 1rem;
+
+            &:first-of-type {
+                margin-top: 4rem;
+            }
+        }
+
+        &-text {
+            padding-left: 1rem;
+        }
+
+        div {
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        i {
+            color: $primary-color;
+        }
+
+        ion-icon {
+            color: $primary-color;
+        }
+    }
+
+
+}

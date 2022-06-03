@@ -1,0 +1,88 @@
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.row1-header {
+  color: #EB6449;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.row1-header--uppercase {
+  text-transform: uppercase;
+}
+.row1-name {
+  color: #918b82;
+  font-size: 25px;
+}
+.row1-content, .row1-info {
+  width: calc(50% - 2rem);
+}
+.row1-info::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20rem;
+  top: 2rem;
+  left: 54%;
+  transform: translateX(-50%);
+  background: rgba(235, 100, 73, 0.5);
+}
+.row1-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.row1-rate-container {
+  position: relative;
+  left: -1rem;
+}
+.row1-rate-point {
+  display: inline-block;
+  position: relative;
+  transform: translateY(0.25rem);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 2px solid #EB6449;
+  background-color: #EB6449;
+}
+.row1-rate-point:not(:first-child) {
+  margin-left: 0.8rem;
+}
+.row1-rate-point--trans {
+  background-color: transparent;
+}
+.row1-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row1-info-item {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin-top: 1rem;
+}
+.row1-info-item:first-of-type {
+  margin-top: 4rem;
+}
+.row1-info-text {
+  padding-left: 1rem;
+}
+.row1-info div {
+  color: #918b82;
+  font-size: 20px;
+  font-weight: 300;
+}
+.row1-info i {
+  color: #EB6449;
+}
+.row1-info ion-icon {
+  color: #EB6449;
+}
+
+/*# sourceMappingURL=software.css.map */

@@ -1,0 +1,57 @@
+$primary-color:#EB6449;
+$secondary-color: #918b82;
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin maxWidth($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-header {
+        color: $primary-color;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &-category,
+    &-education {
+        width: calc(50% - 2rem);
+    }
+
+    &-category {
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-item {
+            color: $secondary-color;
+            font-size: 25px;
+            margin-bottom: 2.5rem;
+        }
+
+        &-left {
+            width: 75%;
+        }
+
+        &-right {
+            width: 25%;
+        }
+    }
+}
